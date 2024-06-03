@@ -26,6 +26,7 @@ Table Of Contents:
 	--secondary: #ffffff;
 	--tertiary: #028fcc;
 	--gradient: linear-gradient(to right, #03D6F3, #000AFF);
+	--quarter: #000AFF;
 }
 
 ff0000 h1,
@@ -422,6 +423,7 @@ li {
 	opacity: 0.8;
 }
 
+
 /* ACCORDEON */
 .faqAccordion {
 	padding-top: 3rem;
@@ -464,7 +466,7 @@ li {
 	/* Alinha itens ao longo do eixo transversal */
 }
 
-.card-header {
+.card-header-carrocel {
 	margin: 0;
 	padding: 0;
 	font-weight: 700;
@@ -503,7 +505,7 @@ li {
 	margin-left: auto;
 }
 
-.card-body {
+.card-body-corrocel {
 	background-color: #1c262f;
 	color: #fff;
 	border: none;
@@ -543,10 +545,149 @@ li {
 /*     Plans     */
 /*****************/
 .plans .card {
-	padding: 20px;
-	border: 2px solid #fdff9b;
+    background-color: #3b3b3b; /* Card background color */
+    padding: 0; /* Remove padding to allow custom padding in sections */
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    border-radius: 8px; /* Add rounded corners */
+    overflow: hidden; /* Ensure content doesn't overflow */
+    width: 100%; /* Ensure the card takes the full width of the container */
 }
 
+.card-header, .card-footer {
+    background-color: #000;
+    color: #ffffff;
+    text-align: center;
+    width: 100%; /* Ensure the header and footer take the full width of the card */
+}
+
+.card-header {
+    background-color: #0f1391; /* Header background color */
+    color: #ffffff;
+    text-align: center;
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+}
+.plan-image {
+    max-width: 100%; /* Define a largura máxima da imagem para que ela não ultrapasse o contêiner */
+    display: block; /* Define a imagem como um bloco para que você possa aplicar margens e alinhamentos */
+
+}
+
+
+.card-header .plan-name {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.card-header .plan-price {
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+.card-header .plan-value {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.card-body {
+    padding: 0 20px 20px 20px; /* Adjust padding to match card-header and card-footer */
+    flex-grow: 1;
+    width: 100%; /* Ensure the body takes the full width of the card */
+	background-color: #000;
+}
+
+.card-body .plan-description {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #fff;
+    font-family: sora, Sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.card-body .plan-subdescription,
+.card-body .plan-details {
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.card-body .plan-benefits {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinhar à esquerda */
+}
+
+.card-body .plan-benefits li {
+    color: #ccc;
+    margin-top: 5px;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    text-align: left; /* Alinhar o texto à esquerda */
+}
+
+.card-body .plan-benefits li i {
+    margin-right: 8px; /* Espaçamento entre ícone e texto */
+    color: #0ee951; /* Cor verde para os ícones */
+    flex-shrink: 0; /* Evitar que o ícone encolha */
+}
+
+.card-body .plan-benefits li span {
+    display: inline-block;
+    word-break: break-word; /* Quebrar linha para palavras longas */
+}
+
+.card-body .divider {
+    border: 0;
+    height: 3px;
+    background: linear-gradient(to right, #03D6F3, #0026ff);
+    margin: 10px 0; /* Ajustar o espaçamento conforme necessário */
+    opacity: 1; /* Garante que a opacidade esteja no máximo */
+}
+
+.card-body .divider-2 {
+    border: 0;
+    height: 3px;
+    background: linear-gradient(to right, #03D6F3, #0026ff);
+    margin: 10px 0; /* Ajustar o espaçamento conforme necessário */
+    opacity: 1; /* Garante que a opacidade esteja no máximo */
+	margin-bottom: 30px;
+}
+
+.icon-benefits {
+    color: #0ee951;
+}
+
+.card-footer {
+    text-align: center;
+    padding: 20px;
+    border-bottom-left-radius: 18px; /* Ensure the radius matches the card */
+    border-bottom-right-radius: 18px; /* Ensure the radius matches the card */
+}
+
+.card-footer .btn {
+	font-family: sora, Sans-serif;
+    fill: #000;
+    color: #000;
+	font-weight: 580;
+	background-image: linear-gradient(to right, #fff, #fff) !important ;
+	background-color: transparent;
+    border-radius: 4px;
+	width: 100%;
+    line-height: 1;
+}
+
+.plan-disclaimer {
+    font-size: 10px;
+    color: #ccc;
+    margin-top: 5px;
+}
 
 /************************/
 /*     Testimonials     */
@@ -570,6 +711,8 @@ li {
 	border-image-slice: 1;
 	border-width: 3px;
 	border-image-source: var(--gradient);
+	background-color: #1e1e1e;
+
 }
 
 .slider-1 .slider-container {
