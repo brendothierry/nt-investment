@@ -919,7 +919,7 @@ li {
 }
 
 .ex-header h1 {
-	color: #fff;
+	color: #26e064;
 }
 
 .ex-basic-1 .list-unstyled .fas {
@@ -933,7 +933,13 @@ li {
 
 .ex-basic-1 .text-box {
 	padding: 1.25rem 1.25rem 0.5rem 1.25rem;
-	background-color: #f7f9fd;
+	background-color: #464747;
+	border-radius: 10px;
+}
+
+.ex-basic-1 .p-large {
+	color: white;
+	font-size: 20px;
 }
 
 .ex-cards-1 .card {
