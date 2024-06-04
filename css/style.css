@@ -301,6 +301,46 @@ li {
 	/* Ajuste o valor conforme necessário */
 }
 
+.payment {
+    background-image: url(../assets/images/payment-logo.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100vw; /* Garante que a largura seja 100% da viewport */
+    height: 100vh; /* Garante que a altura seja 100% da viewport */
+    display: flex; /* Define o layout flex */
+    justify-content: flex-end; /* Alinha itens ao final (parte inferior) */
+    align-items: center; /* Centraliza itens horizontalmente */
+    flex-direction: column; /* Alinha itens verticalmente */
+}
+
+.payment-box {
+    width: 1000px; /* Define a largura do quadrado */
+    height: 900px; /* Define a altura do quadrado */
+    background-color: rgba(255, 255, 255, 0.9); /* Define a cor de fundo do quadrado */
+    border-radius: 10px; /* Adiciona bordas arredondadas */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adiciona sombra ao quadrado */
+    text-align: center; /* Centraliza o texto dentro do quadrado */
+    padding: 20px; /* Adiciona padding dentro do quadrado */
+    position: relative; /* Garante que o logo pode ser posicionado relativamente */
+	max-width: 100%;
+	max-width: 100%;
+}
+
+.payment-logo {
+    width: 100px; /* Define a largura do logo */
+    height: auto; /* Mantém a proporção do logo */
+    position: absolute; /* Posiciona o logo absolutamente */
+	top: 20%;
+    left: 50%; /* Centraliza o logo horizontalmente */
+    transform: translateX(-50%); /* Ajusta a posição do logo para ficar centralizado */
+}
+
+.payment-content {
+    margin-top: 300px; /* Adiciona espaço acima do conteúdo para o logo */
+	font-size: 20px;
+}
+
 .para {
 	width: 50%;
 }
@@ -349,6 +389,7 @@ li {
 	transform: scale(1.1);
 
 }
+
 
 /* Email - Newsletter Button */
 .btn-secondary {
@@ -410,6 +451,19 @@ li {
 	opacity: 0.8;
 }
 
+.payment-box .btn {
+	font-family: sora, Sans-serif;
+	fill: #000;
+	color: #000;
+	font-weight: 580;
+	background-image: linear-gradient(to right, #15ff00, #48a12d) !important;
+	background-color: transparent;
+	border-radius: 4px;
+	margin-top: -10px;
+	max-width: 100%;
+	line-height: 1;
+	margin-top: 20px;
+}
 
 /* ACCORDEON */
 .faqAccordion {
