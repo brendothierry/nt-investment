@@ -67,11 +67,14 @@ li {
 .home,
 .about,
 .services,
-.plans,
 .work,
 .contact {
 	min-height: 110vh;
 	position: relative;
+}
+
+.plans {
+	min-height: 70vh;
 }
 
 .faqAccordion {
@@ -81,11 +84,11 @@ li {
 .services,
 .faqAccordion,
 .contact,
-
 .footer {
 	background-color: var(--primary);
 }
-.testimonial{
+
+.testimonial {
 	background-color: black;
 }
 
@@ -102,7 +105,7 @@ li {
 }
 
 .bottom {
-	background-color: black;
+	background-color: rgb(46, 45, 45);
 }
 
 /* Gradient Border And Background On Icons */
@@ -130,23 +133,6 @@ li {
 .location .a {
 	cursor: pointer;
 }
-
-.plans .far {
-	padding: 15px 0;
-	background: linear-gradient(to right, #fdff9b, #fbff00);
-	background-clip: text;
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-}
-
-.plans_text {
-	background: #fdff9b;
-	background-clip: text;
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-}
-
-.home .fas {}
 
 .navbar-nav a:hover,
 .footer a:hover,
@@ -309,9 +295,10 @@ li {
 }
 
 .about img {
-    max-width: 100%;
-    height: auto;
-    margin-top: 20px; /* Ajuste o valor conforme necessário */
+	max-width: 100%;
+	height: auto;
+	margin-top: 20px;
+	/* Ajuste o valor conforme necessário */
 }
 
 .para {
@@ -545,148 +532,169 @@ li {
 /*     Plans     */
 /*****************/
 .plans .card {
-    background-color: #3b3b3b; /* Card background color */
-    padding: 0; /* Remove padding to allow custom padding in sections */
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    border-radius: 8px; /* Add rounded corners */
-    overflow: hidden; /* Ensure content doesn't overflow */
-    width: 100%; /* Ensure the card takes the full width of the container */
+	background-color: #3b3b3b;
+	/* Card background color */
+	padding: 0;
+	/* Remove padding to allow custom padding in sections */
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	border-radius: 8px;
+	/* Add rounded corners */
+	overflow: hidden;
+	/* Ensure content doesn't overflow */
+	width: 100%;
+	/* Ensure the card takes the full width of the container */
 }
 
-.card-header, .card-footer {
-    background-color: #000;
-    color: #ffffff;
-    text-align: center;
-    width: 100%; /* Ensure the header and footer take the full width of the card */
+.card-header,
+.card-footer {
+	background-color: #000;
+	color: #ffffff;
+	text-align: center;
+	width: 100%;
+	/* Ensure the header and footer take the full width of the card */
+	height: 90%;
 }
 
 .card-header {
-    background-color: #0f1391; /* Header background color */
-    color: #ffffff;
-    text-align: center;
-    border-top-left-radius: 18px;
-    border-top-right-radius: 18px;
+	background-color: #0f1391;
+	/* Header background color */
+	color: #ffffff;
+	text-align: center;
 }
+
 .plan-image {
-    max-width: 100%; /* Define a largura máxima da imagem para que ela não ultrapasse o contêiner */
-    display: block; /* Define a imagem como um bloco para que você possa aplicar margens e alinhamentos */
+	max-width: 100%;
+	/* Define a largura máxima da imagem para que ela não ultrapasse o contêiner */
+	display: block;
+	/* Define a imagem como um bloco para que você possa aplicar margens e alinhamentos */
 
 }
 
 
 .card-header .plan-name {
-    font-size: 1.5rem;
-    margin: 0;
+	font-size: 1.5rem;
+	margin: 0;
 }
 
 .card-header .plan-price {
-    font-size: 1rem;
-    font-weight: normal;
+	font-size: 1rem;
+	font-weight: normal;
 }
 
 .card-header .plan-value {
-    font-size: 2rem;
-    font-weight: bold;
+	font-size: 2rem;
+	font-weight: bold;
 }
 
 .card-body {
-    padding: 0 20px 20px 20px; /* Adjust padding to match card-header and card-footer */
-    flex-grow: 1;
-    width: 100%; /* Ensure the body takes the full width of the card */
+	padding: 0 20px 20px 20px;
+	/* Adjust padding to match card-header and card-footer */
+	flex-grow: 1;
+	width: 100%;
+	/* Ensure the body takes the full width of the card */
 	background-color: #000;
 }
 
 .card-body .plan-description {
-    margin-bottom: 5px;
-    font-weight: bold;
-    color: #fff;
-    font-family: sora, Sans-serif;
-    font-size: 13px;
-    font-weight: 600;
-    text-transform: uppercase;
+	margin-bottom: 5px;
+	font-weight: bold;
+	color: #fff;
+	font-family: sora, Sans-serif;
+	font-size: 13px;
+	font-weight: 600;
+	text-transform: uppercase;
 }
 
 .card-body .plan-subdescription,
 .card-body .plan-details {
-    color: #ffffff;
-    margin-bottom: 10px;
+	color: #ffffff;
 }
 
 .card-body .plan-benefits {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start; /* Alinhar à esquerda */
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	/* Alinhar à esquerda */
 }
 
 .card-body .plan-benefits li {
-    color: #ccc;
-    margin-top: 5px;
-    font-size: 0.9rem;
-    display: flex;
-    align-items: center;
-    text-align: left; /* Alinhar o texto à esquerda */
+	color: #ccc;
+	font-size: 0.9rem;
+	display: flex;
+	align-items: center;
+	text-align: left;
+	/* Alinhar o texto à esquerda */
 }
 
 .card-body .plan-benefits li i {
-    margin-right: 8px; /* Espaçamento entre ícone e texto */
-    color: #0ee951; /* Cor verde para os ícones */
-    flex-shrink: 0; /* Evitar que o ícone encolha */
+	margin-right: 8px;
+	/* Espaçamento entre ícone e texto */
+	color: #0ee951;
+	/* Cor verde para os ícones */
+	flex-shrink: 0;
+	/* Evitar que o ícone encolha */
 }
 
 .card-body .plan-benefits li span {
-    display: inline-block;
-    word-break: break-word; /* Quebrar linha para palavras longas */
+	display: inline-block;
+	word-break: break-word;
+	/* Quebrar linha para palavras longas */
 }
 
 .card-body .divider {
-    border: 0;
-    height: 3px;
-    background: linear-gradient(to right, #03D6F3, #0026ff);
-    margin: 10px 0; /* Ajustar o espaçamento conforme necessário */
-    opacity: 1; /* Garante que a opacidade esteja no máximo */
+	border: 0;
+	height: 3px;
+	background: linear-gradient(to right, #03D6F3, #0026ff);
+	margin: 10px 0;
+	/* Ajustar o espaçamento conforme necessário */
+	opacity: 1;
+	/* Garante que a opacidade esteja no máximo */
 }
 
 .card-body .divider-2 {
-    border: 0;
-    height: 3px;
-    background: linear-gradient(to right, #03D6F3, #0026ff);
-    margin: 10px 0; /* Ajustar o espaçamento conforme necessário */
-    opacity: 1; /* Garante que a opacidade esteja no máximo */
-	margin-bottom: 30px;
+	border: 0;
+	height: 3px;
+	background: linear-gradient(to right, #03D6F3, #0026ff);
+	margin: 10px 0;
+	/* Ajustar o espaçamento conforme necessário */
+	opacity: 1;
+	/* Garante que a opacidade esteja no máximo */
 }
 
 .icon-benefits {
-    color: #0ee951;
+	color: #0ee951;
 }
 
 .card-footer {
-    text-align: center;
-    padding: 20px;
-    border-bottom-left-radius: 18px; /* Ensure the radius matches the card */
-    border-bottom-right-radius: 18px; /* Ensure the radius matches the card */
+	text-align: center;
+	border-bottom-left-radius: 18px;
+	/* Ensure the radius matches the card */
+	border-bottom-right-radius: 18px;
+	/* Ensure the radius matches the card */
 }
 
 .card-footer .btn {
 	font-family: sora, Sans-serif;
-    fill: #000;
-    color: #000;
+	fill: #000;
+	color: #000;
 	font-weight: 580;
-	background-image: linear-gradient(to right, #fff, #fff) !important ;
+	background-image: linear-gradient(to right, #fff, #fff) !important;
 	background-color: transparent;
-    border-radius: 4px;
-	width: 100%;
-    line-height: 1;
+	border-radius: 4px;
+	margin-top: -10px;
+	max-width: 100%;
+	line-height: 1;
 }
 
 .plan-disclaimer {
-    font-size: 10px;
-    color: #ccc;
-    margin-top: 5px;
+	font-size: 10px;
+	color: #ccc;
+	margin-top: 5px;
 }
 
 /************************/
@@ -787,6 +795,33 @@ li {
 	/* required for the fade animation */
 }
 
+/* BOTTOM */
+
+.bottom a {
+    color: white; /* Define a cor inicial do texto */
+    text-decoration: none; /* Remove sublinhado padrão */
+    transition: color 0.3s; /* Adiciona uma transição suave para a mudança de cor */
+    display: inline-block; /* Garante que o padding afete apenas a largura do link */
+}
+
+.bottom a .fas {
+    color: blue; /* Define a cor inicial da seta */
+}
+
+.bottom a:hover {
+    color: blue; /* Muda a cor do texto para azul quando passa o mouse */
+}
+
+.bottom a:hover .fas {
+    color: inherit; /* Herda a cor do texto quando o link é hover */
+}
+
+.bottom a .link-text {
+    padding-right: 10px; /* Adiciona espaço entre o ícone e o texto */
+}
+.bottom {
+    overflow-x: hidden; /* Oculta qualquer conteúdo que exceda a largura da seção */
+}
 @-webkit-keyframes fadeDropdown {
 	0% {
 		opacity: 0;
@@ -1029,43 +1064,51 @@ li {
 	.about .container {
 		position: relative;
 	}
+
 	.about {
-        text-align: center;
-    }
+		text-align: center;
+	}
 
-    .about .col-lg-7 {
-        text-align: center;
-    }
+	.about .col-lg-7 {
+		text-align: center;
+	}
 
-    .about img {
-        margin-top: 20px;
-        margin-left: auto;
-        margin-right: auto;
-    }
+	.about img {
+		margin-top: 20px;
+		margin-left: auto;
+		margin-right: auto;
+	}
 }
 
 @media (max-width: 768px) {
-	.btn-accordion {
-		width: 100%;
-		padding: 15px;
-		font-size: 16px;
-	}
-
 	.accordion {
 		max-width: 100%;
-		margin: auto;
-		padding: 0 15px;
 	}
 
-	.card-header {
-		padding-bottom: 15px;
+	.card {
+		flex-direction: column;
+		align-items: flex-start;
 	}
 
-	.card-body {
-		padding: 10px;
+	.btn-accordion {
+		width: 100%;
+		text-align: left;
 	}
+
+	.btn-accordion .icon {
+		position: relative;
+		right: 0;
+		margin-left: auto;
+	}
+
+	.card-header-carrocel {
+		text-align: left;
+		width: 100%;
+	}
+
 	.about {
         text-align: center;
+        background-position: top center; /* Ajuste conforme necessário */
     }
 
     .about .col-lg-7 {
@@ -1076,8 +1119,52 @@ li {
         margin-top: 20px;
         margin-left: auto;
         margin-right: auto;
-		border-radius: 10%;
+        border-radius: 10%;
     }
+
+	.about {
+        background-image: url(../assets/images/about-logo.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        /* Aqui você pode ajustar o posicionamento do background */
+        background-position: left center; /* Por exemplo, centraliza o background */
+    }
+
+	.location .row {
+		flex-direction: column;
+		/* Empilhar itens verticalmente */
+	}
+
+	.location .col-lg-3 {
+		margin-bottom: 10px;
+		/* Espaçamento entre os itens */
+	}
+
+	.location .far,
+	.location .fas {
+		font-size: 2rem;
+		/* Reduzir tamanho dos ícones */
+	}
+
+	.location h6 {
+		font-size: 1rem;
+		/* Reduzir tamanho da fonte dos títulos */
+	}
+
+	.location p {
+		font-size: 0.875rem;
+		/* Reduzir tamanho da fonte dos parágrafos */
+	}
+
+	.location .p-2 {
+		padding: 100px;
+		/* Ajustar padding */
+	}
+
+	.location .ms-2 {
+		margin-left: 0;
+		/* Remover margem esquerda */
+	}
 }
 
 
@@ -1116,6 +1203,70 @@ li {
 
 	.card-body {
 		padding: 8px;
+	}
+
+	@media (max-width: 1728px) {
+		.card-header .plan-name {
+			font-size: 1.25rem;
+		}
+
+		.card-header .plan-value {
+			font-size: 1.5rem;
+		}
+
+		.card-body {
+			padding: 0 15px 15px 15px;
+		}
+
+		.card-body .plan-description {
+			font-size: 12px;
+		}
+
+		.card-body .plan-benefits li {
+			font-size: 0.8rem;
+		}
+
+		.card-footer .btn {
+			font-size: 0.8rem;
+			padding: 8px 12px;
+		}
+
+		.plan-disclaimer {
+			font-size: 9px;
+		}
+
+		.about h2 {
+			font-size: 1.75rem;
+		}
+
+		.about p {
+			font-size: 1rem;
+		}
+
+		.about .btn {
+			font-size: 0.875rem;
+			padding: 8px 16px;
+		}
+
+		.about img {
+			margin-top: 10px;
+		}
+
+		.about .my-3 {
+			margin: 1rem 0;
+		}
+
+		.about .container {
+			padding: 0 15px;
+		}
+
+		.about .row {
+			margin: 0;
+		}
+
+		.about .col-lg-7 {
+			padding: 0;
+		}
 	}
 
 }
