@@ -798,30 +798,41 @@ li {
 /* BOTTOM */
 
 .bottom a {
-    color: white; /* Define a cor inicial do texto */
-    text-decoration: none; /* Remove sublinhado padrão */
-    transition: color 0.3s; /* Adiciona uma transição suave para a mudança de cor */
-    display: inline-block; /* Garante que o padding afete apenas a largura do link */
+	color: white;
+	/* Define a cor inicial do texto */
+	text-decoration: none;
+	/* Remove sublinhado padrão */
+	transition: color 0.3s;
+	/* Adiciona uma transição suave para a mudança de cor */
+	display: inline-block;
+	/* Garante que o padding afete apenas a largura do link */
 }
 
 .bottom a .fas {
-    color: blue; /* Define a cor inicial da seta */
+	color: blue;
+	/* Define a cor inicial da seta */
 }
 
 .bottom a:hover {
-    color: blue; /* Muda a cor do texto para azul quando passa o mouse */
+	color: blue;
+	/* Muda a cor do texto para azul quando passa o mouse */
 }
 
 .bottom a:hover .fas {
-    color: inherit; /* Herda a cor do texto quando o link é hover */
+	color: inherit;
+	/* Herda a cor do texto quando o link é hover */
 }
 
 .bottom a .link-text {
-    padding-right: 10px; /* Adiciona espaço entre o ícone e o texto */
+	padding-right: 10px;
+	/* Adiciona espaço entre o ícone e o texto */
 }
+
 .bottom {
-    overflow-x: hidden; /* Oculta qualquer conteúdo que exceda a largura da seção */
+	overflow-x: hidden;
+	/* Oculta qualquer conteúdo que exceda a largura da seção */
 }
+
 @-webkit-keyframes fadeDropdown {
 	0% {
 		opacity: 0;
@@ -1087,6 +1098,17 @@ li {
 }
 
 @media (max-width: 768px) {
+	.home {
+		background-image: url(../assets/images/home-mobile.png);
+		background-size: cover;
+		background-repeat: no-repeat;
+		padding-top: 500px !important;
+	}
+	
+	.mobile-hide {
+        display: none;
+    }
+
 	.accordion {
 		max-width: 100%;
 	}
@@ -1113,28 +1135,22 @@ li {
 	}
 
 	.about {
-        text-align: center;
-        background-position: top center; /* Ajuste conforme necessário */
-    }
+		text-align: center;
+		background-position: top center;
+		/* Ajuste conforme necessário */
+	}
 
-    .about .col-lg-7 {
-        text-align: center;
-    }
-
-    .about img {
-        margin-top: 20px;
-        margin-left: auto;
-        margin-right: auto;
-        border-radius: 10%;
-    }
+	.about .col-lg-7 {
+		text-align: center;
+		padding-top: 100px !important;
+	}
 
 	.about {
-        background-image: url(../assets/images/about-logo.png);
-        background-size: cover;
-        background-repeat: no-repeat;
-        /* Aqui você pode ajustar o posicionamento do background */
-        background-position: left center; /* Por exemplo, centraliza o background */
-    }
+		background-image: url(../assets/images/about-logo-mobile.png);
+		background-size: cover;
+		background-repeat: no-repeat;
+		
+	}
 
 	.location .row {
 		flex-direction: column;
