@@ -978,66 +978,105 @@ li {
 /*     Extra Pages     */
 /***********************/
 .ex-header {
-	padding-top: 8.5rem;
-	padding-bottom: 4rem;
-	background-color: var(--primary);
+	padding-top: 2.5rem;
+	padding-bottom: 3rem;
+	background-color: #000
 }
 
-.ex-header h1 {
-	color: #26e064;
+.home-about {
+	background-image: url(../assets/images/home-article.png);
+	height: 92vh;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.home-about h1 {
+	color: #f1f7f3;
+	
+}
+.home-about i {
+	color: #f1f7f3;
+
+	
 }
 
-.ex-basic-1 .list-unstyled .fas {
+.home-about p {
+	color: #f1f7f3;
+	font-size: 16px;
+	
+}
+
+.home-about .list-unstyled .fas {
 	font-size: 0.375rem;
 	line-height: 1.625rem;
 }
 
-.ex-basic-1 .list-unstyled .flex-grow-1 {
+.home-about .list-unstyled .flex-grow-1 {
 	margin-left: 0.5rem;
 }
 
-.ex-basic-1 .text-box {
+.home-about .text-box {
 	padding: 1.25rem 1.25rem 0.5rem 1.25rem;
 	background-color: #464747;
 	border-radius: 10px;
 }
 
-.ex-basic-1 .p-large {
+.home-about .p-large {
 	color: white;
 	font-size: 20px;
 }
 
-.ex-cards-1 .card {
-	border: none;
-	background-color: transparent;
+.algo-trading {
+	
+	background-color: #000;
+	height: 60vh;
+
 }
 
-.ex-cards-1 .card .fa-stack {
-	width: 2em;
-	font-size: 1.125rem;
-}
-
-.ex-cards-1 .card .fa-stack-2x {
-	color: var(--secondary);
-}
-
-.ex-cards-1 .card .fa-stack-1x {
-	width: 2em;
+.algo-trading h1 {
 	color: #ffffff;
-	font-weight: 700;
-	line-height: 2.125rem;
 }
 
-.ex-cards-1 .card .list-unstyled .flex-grow-1 {
-	margin-left: 2.25rem;
+.algo-trading .para {
+	font-weight: 400;
+	color: #ffffff;
+}
+.algo-trading .text-bold {
+	font-weight: bold;
+	
 }
 
-.ex-cards-1 .card .list-unstyled .flex-grow-1 h5 {
-	margin-top: 0.125rem;
-	margin-bottom: 0.5rem;
+.estatistica { 
+background-image: url(../assets/images/estatistica-about.png);
+height: 60vh;
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
 }
 
+.estatistica h1 { 
+	color: #ffffff;
+	
+	}
+.estatistica p { 
+	color: #ffffff;
+		
+}
 
+.sobre-nt { 
+background-color: #000;
+}
+	
+
+.sobre-nt h1 { 
+	color: #ffffff;
+	
+}
+
+.sobre-nt p { 
+color: #ffffff;
+		
+}
 /* Navegação padrão */
 .navbar {
 	display: flex;
