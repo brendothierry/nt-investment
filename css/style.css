@@ -302,42 +302,62 @@ li {
 }
 
 .payment {
-    background-image: url(../assets/images/payment-logo.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 100vw; /* Garante que a largura seja 100% da viewport */
-    height: 100vh; /* Garante que a altura seja 100% da viewport */
-    display: flex; /* Define o layout flex */
-    justify-content: flex-end; /* Alinha itens ao final (parte inferior) */
-    align-items: center; /* Centraliza itens horizontalmente */
-    flex-direction: column; /* Alinha itens verticalmente */
+	background-image: url(../assets/images/payment-logo.png);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 100vw;
+	/* Garante que a largura seja 100% da viewport */
+	height: 100vh;
+	/* Garante que a altura seja 100% da viewport */
+	display: flex;
+	/* Define o layout flex */
+	justify-content: flex-end;
+	/* Alinha itens ao final (parte inferior) */
+	align-items: center;
+	/* Centraliza itens horizontalmente */
+	flex-direction: column;
+	/* Alinha itens verticalmente */
 }
 
 .payment-box {
-    width: 1000px; /* Define a largura do quadrado */
-    height: 900px; /* Define a altura do quadrado */
-    background-color: rgba(255, 255, 255, 0.9); /* Define a cor de fundo do quadrado */
-    border-radius: 10px; /* Adiciona bordas arredondadas */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adiciona sombra ao quadrado */
-    text-align: center; /* Centraliza o texto dentro do quadrado */
-    padding: 20px; /* Adiciona padding dentro do quadrado */
-    position: relative; /* Garante que o logo pode ser posicionado relativamente */
+	width: 1000px;
+	/* Define a largura do quadrado */
+	height: 900px;
+	/* Define a altura do quadrado */
+	background-color: rgba(255, 255, 255, 0.9);
+	/* Define a cor de fundo do quadrado */
+	border-radius: 10px;
+	/* Adiciona bordas arredondadas */
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	/* Adiciona sombra ao quadrado */
+	text-align: center;
+	/* Centraliza o texto dentro do quadrado */
+	padding: 20px;
+	/* Adiciona padding dentro do quadrado */
+	position: relative;
+	/* Garante que o logo pode ser posicionado relativamente */
 	max-width: 100%;
 	max-width: 100%;
 }
 
 .payment-logo {
-    width: 100px; /* Define a largura do logo */
-    height: auto; /* Mantém a proporção do logo */
-    position: absolute; /* Posiciona o logo absolutamente */
+	width: 100px;
+	/* Define a largura do logo */
+	height: auto;
+	/* Mantém a proporção do logo */
+	position: absolute;
+	/* Posiciona o logo absolutamente */
 	top: 20%;
-    left: 50%; /* Centraliza o logo horizontalmente */
-    transform: translateX(-50%); /* Ajusta a posição do logo para ficar centralizado */
+	left: 50%;
+	/* Centraliza o logo horizontalmente */
+	transform: translateX(-50%);
+	/* Ajusta a posição do logo para ficar centralizado */
 }
 
 .payment-content {
-    margin-top: 300px; /* Adiciona espaço acima do conteúdo para o logo */
+	margin-top: 300px;
+	/* Adiciona espaço acima do conteúdo para o logo */
 	font-size: 20px;
 }
 
@@ -389,7 +409,6 @@ li {
 	transform: scale(1.1);
 
 }
-
 
 /* Email - Newsletter Button */
 .btn-secondary {
@@ -468,43 +487,29 @@ li {
 /* ACCORDEON */
 .faqAccordion {
 	padding-top: 3rem;
-	/* Ajuste conforme necessário */
 	padding-bottom: 3rem;
-	/* Ajuste conforme necessário */
 }
 
 .text-center h2 {
 	color: #fff;
 	margin-bottom: 1rem;
-	/* Espaçamento abaixo do título */
 }
 
 .accordion {
 	margin-top: 2rem;
-	/* Espaçamento acima do acordeão */
 	max-width: 1000px;
-	/* Largura máxima do acordeão */
 	margin: auto;
-	/* Centraliza o acordeão */
 	background-color: #1c262f;
-	/* Cor de fundo do acordeão */
 }
 
 .card {
 	background-color: #1c262f;
-	/* Cor de fundo do cartão */
 	border: none;
-	/* Remove bordas */
 	margin-bottom: 1px;
-	/* Pequena margem entre cartões */
 	text-align: left;
-	/* Alinha o texto à esquerda */
 	display: flex;
-	/* Adiciona display flex para alinhar itens */
 	justify-content: space-between;
-	/* Alinha itens ao longo do eixo principal */
 	align-items: center;
-	/* Alinha itens ao longo do eixo transversal */
 }
 
 .card-header-carrocel {
@@ -587,18 +592,13 @@ li {
 /*****************/
 .plans .card {
 	background-color: #3b3b3b;
-	/* Card background color */
 	padding: 0;
-	/* Remove padding to allow custom padding in sections */
 	display: flex;
 	flex-direction: column;
 	height: 100%;
 	border-radius: 8px;
-	/* Add rounded corners */
 	overflow: hidden;
-	/* Ensure content doesn't overflow */
 	width: 100%;
-	/* Ensure the card takes the full width of the container */
 }
 
 .card-header,
@@ -607,7 +607,6 @@ li {
 	color: #ffffff;
 	text-align: center;
 	width: 100%;
-	/* Ensure the header and footer take the full width of the card */
 	height: 90%;
 }
 
@@ -620,9 +619,7 @@ li {
 
 .plan-image {
 	max-width: 100%;
-	/* Define a largura máxima da imagem para que ela não ultrapasse o contêiner */
 	display: block;
-	/* Define a imagem como um bloco para que você possa aplicar margens e alinhamentos */
 
 }
 
@@ -644,10 +641,8 @@ li {
 
 .card-body {
 	padding: 0 20px 20px 20px;
-	/* Adjust padding to match card-header and card-footer */
 	flex-grow: 1;
 	width: 100%;
-	/* Ensure the body takes the full width of the card */
 	background-color: #000;
 }
 
@@ -673,7 +668,6 @@ li {
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
-	/* Alinhar à esquerda */
 }
 
 .card-body .plan-benefits li {
@@ -682,22 +676,17 @@ li {
 	display: flex;
 	align-items: center;
 	text-align: left;
-	/* Alinhar o texto à esquerda */
 }
 
 .card-body .plan-benefits li i {
 	margin-right: 8px;
-	/* Espaçamento entre ícone e texto */
 	color: #0ee951;
-	/* Cor verde para os ícones */
 	flex-shrink: 0;
-	/* Evitar que o ícone encolha */
 }
 
 .card-body .plan-benefits li span {
 	display: inline-block;
 	word-break: break-word;
-	/* Quebrar linha para palavras longas */
 }
 
 .card-body .divider {
@@ -705,9 +694,7 @@ li {
 	height: 3px;
 	background: linear-gradient(to right, #03D6F3, #0026ff);
 	margin: 10px 0;
-	/* Ajustar o espaçamento conforme necessário */
 	opacity: 1;
-	/* Garante que a opacidade esteja no máximo */
 }
 
 .card-body .divider-2 {
@@ -715,9 +702,7 @@ li {
 	height: 3px;
 	background: linear-gradient(to right, #03D6F3, #0026ff);
 	margin: 10px 0;
-	/* Ajustar o espaçamento conforme necessário */
 	opacity: 1;
-	/* Garante que a opacidade esteja no máximo */
 }
 
 .icon-benefits {
@@ -727,9 +712,7 @@ li {
 .card-footer {
 	text-align: center;
 	border-bottom-left-radius: 18px;
-	/* Ensure the radius matches the card */
 	border-bottom-right-radius: 18px;
-	/* Ensure the radius matches the card */
 }
 
 .card-footer .btn {
@@ -737,13 +720,41 @@ li {
 	fill: #000;
 	color: #000;
 	font-weight: 580;
+	font-size: 16px !important;
 	background-image: linear-gradient(to right, #fff, #fff) !important;
 	background-color: transparent;
 	border-radius: 4px;
 	margin-top: -10px;
 	max-width: 100%;
 	line-height: 1;
+	padding: 10px 20px;
 }
+
+
+.card-footer .btn-more {
+	font-family: sora, Sans-serif;
+	font-size: 12px;
+	font-weight: 700;
+	fill: #fff;
+	color: #000000;
+	background-color: transparent;
+	background-image: linear-gradient(to right, #ffffff, #00ff22);
+	border-radius: 4px;
+	padding: 10px 10px;
+	transition: transform 0.3s ease;
+	border: none;
+	cursor: pointer;
+	margin-top: 20px;
+	width: 150px;
+	max-height: 34px;
+	display: inline-block;
+	text-align: center;
+}
+
+.card-footer .btn-more-gold:hover {
+	transform: scale(1.1);
+}
+
 
 .plan-disclaimer {
 	font-size: 10px;
@@ -983,6 +994,17 @@ li {
 	background-color: #000
 }
 
+.ex-header-privacy {
+	padding-top: 2.5rem;
+	padding-bottom: 3rem;
+	background-color: #000
+}
+
+.ex-header-privacy h1 {
+	margin-top: 30px;
+	color: #fff;
+}
+
 .home-about {
 	background-image: url(../assets/images/home-article.png);
 	height: 92vh;
@@ -990,20 +1012,22 @@ li {
 	background-position: center;
 	background-repeat: no-repeat;
 }
+
 .home-about h1 {
 	color: #f1f7f3;
-	
+
 }
+
 .home-about i {
 	color: #f1f7f3;
 
-	
+
 }
 
 .home-about p {
 	color: #f1f7f3;
 	font-size: 16px;
-	
+
 }
 
 .home-about .list-unstyled .fas {
@@ -1027,7 +1051,7 @@ li {
 }
 
 .algo-trading {
-	
+
 	background-color: #000;
 	height: 60vh;
 
@@ -1041,42 +1065,45 @@ li {
 	font-weight: 400;
 	color: #ffffff;
 }
+
 .algo-trading .text-bold {
 	font-weight: bold;
-	
+
 }
 
-.estatistica { 
-background-image: url(../assets/images/estatistica-about.png);
-height: 60vh;
-background-size: cover;
-background-position: center;
-background-repeat: no-repeat;
+.estatistica {
+	background-image: url(../assets/images/estatistica-about.png);
+	height: 60vh;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
 }
 
-.estatistica h1 { 
+.estatistica h1 {
 	color: #ffffff;
-	
-	}
-.estatistica p { 
+
+}
+
+.estatistica p {
 	color: #ffffff;
-		
+
 }
 
-.sobre-nt { 
-background-color: #000;
+.sobre-nt {
+	background-color: #000;
 }
-	
 
-.sobre-nt h1 { 
+
+.sobre-nt h1 {
 	color: #ffffff;
-	
+
 }
 
-.sobre-nt p { 
-color: #ffffff;
-		
+.sobre-nt p {
+	color: #ffffff;
+
 }
+
 /* Navegação padrão */
 .navbar {
 	display: flex;
@@ -1197,10 +1224,10 @@ color: #ffffff;
 		background-repeat: no-repeat;
 		padding-top: 500px !important;
 	}
-	
+
 	.mobile-hide {
-        display: none;
-    }
+		display: none;
+	}
 
 	.accordion {
 		max-width: 100%;
@@ -1242,7 +1269,7 @@ color: #ffffff;
 		background-image: url(../assets/images/about-logo-mobile.png);
 		background-size: cover;
 		background-repeat: no-repeat;
-		
+
 	}
 
 	.location .row {
