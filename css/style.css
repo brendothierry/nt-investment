@@ -26,6 +26,8 @@ Table Of Contents:
 	--secondary: #ffffff;
 	--tertiary: #028fcc;
 	--gradient: linear-gradient(to right, #03D6F3, #000AFF);
+	--gradient-bronze: linear-gradient(to right, #634641, #fff, #634641);
+	--gradient-bronze-branco: linear-gradient(to right, #fff,  #634641, #fff, #634641 );
 	--quarter: #000AFF;
 }
 
@@ -989,8 +991,6 @@ li {
 /*     Extra Pages     */
 /***********************/
 .ex-header {
-	padding-top: 2.5rem;
-	padding-bottom: 3rem;
 	background-color: #000
 }
 
@@ -1157,6 +1157,126 @@ li {
 	transform: translateX(-100%);
 }
 
+	/*Perfil Bronze */
+
+.home-perfil-bronze {
+	background-image: url(../assets/images/home-bronze.png);
+	height: 80vh;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.home-perfil-bronze p {
+	color: #FFF;
+}
+.home-perfil-bronze img {
+	border-radius: 10px;
+}
+.perfil-bronze-text{
+	background: var(--gradient-bronze-branco);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.beneficios-perfil-bronze{
+	background-color: #000;
+	height: 80vh;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.beneficios-perfil-bronze p {
+	color: #FFF;
+}
+.beneficios-perfil-bronze h1 {
+	color: #FFF;
+}
+.beneficios-perfil-bronze img {
+	border-radius: 15px;
+	width: 300%;
+	height: auto; /* Mantém a proporção da imagem */
+	margin-left: 20%;
+
+}
+.passo-perfil-bronze{
+	color: #FFF;
+	background-image: url(../assets/images/fundo-beneficios-bronze.png);
+	height: 110vh;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.passo-perfil-bronze h4 {
+	color: #fff;
+	position: relative;
+    right: -320px; 
+	
+}
+
+
+.image-container {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+
+}
+
+.image-container img {
+	margin-bottom: 0px;
+	max-width: 100%;
+	border-radius: 15px;
+	width: 80%; /* Ajuste a largura conforme necessário */
+	height: auto; /* Mantém a proporção da imagem */
+}
+.custom-margin {
+	position: relative;
+	right: 170px; /* Ajuste conforme necessário para mover para o lado direito */
+}
+.card-footer-bronze {
+	display: flex;
+	justify-content: center; /* Alinha o botão à direita */
+	background-color: #000;
+	color: #ffffff;
+	text-align: center;
+	width: 100%;
+	/* Ensure the header and footer take the full width of the card */
+	height: 90%;
+}
+.card-header-bronze {
+background-color: #634641;
+	color: #ffffff;
+	text-align: center;
+	width: 100%;
+	/* Ensure the header and footer take the full width of the card */
+	height: 90%;
+
+
+}
+.card-body-bronze h6{
+	color: #fff ;
+}
+
+.card-body-bronze .divider {
+border: 0;
+height: 3px;
+background: linear-gradient(to right, #634641, #fff, #634641);
+margin: 10px 0;
+/* Ajustar o espaçamento conforme necessário */
+opacity: 1;
+/* Garante que a opacidade esteja no máximo */
+}
+.card-body-bronze .divider-2 {
+border: 0;
+height: 3px;
+background: linear-gradient(to right, #634641, #fff, #634641);
+margin: 10px 0;
+/* Ajustar o espaçamento conforme necessário */
+opacity: 1;
+/* Garante que a opacidade esteja no máximo */
+}
+
 /* Media Queries */
 @media (min-width: 992px) {
 	.navbar {
@@ -1174,10 +1294,7 @@ li {
 	}
 
 	.navbar.top-nav-collapse {
-		padding-top: 0.5rem;
-		padding-bottom: 0.5rem;
-		background-color: black;
-		box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.025);
+		display: none;
 	}
 
 	.offcanvas-collapse {
