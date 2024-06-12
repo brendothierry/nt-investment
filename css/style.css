@@ -27,7 +27,7 @@ Table Of Contents:
 	--tertiary: #028fcc;
 	--gradient: linear-gradient(to right, #03D6F3, #000AFF);
 	--gradient-bronze: linear-gradient(to right, #634641, #fff, #634641);
-	--gradient-bronze-branco: linear-gradient(to right, #fff,  #634641, #fff, #634641 );
+	--gradient-bronze-branco: linear-gradient(to right, #fff, #634641, #fff, #634641);
 	--quarter: #000AFF;
 }
 
@@ -753,7 +753,7 @@ li {
 	text-align: center;
 }
 
-.card-footer .btn-more-gold:hover {
+.card-footer .btn-more:hover {
 	transform: scale(1.1);
 }
 
@@ -1157,7 +1157,9 @@ li {
 	transform: translateX(-100%);
 }
 
-	/*Perfil Bronze */
+/*##################
+		Perfil Bronze 
+	####################*/
 
 .home-perfil-bronze {
 	background-image: url(../assets/images/home-bronze.png);
@@ -1170,111 +1172,142 @@ li {
 .home-perfil-bronze p {
 	color: #FFF;
 }
+
 .home-perfil-bronze img {
 	border-radius: 10px;
+	height: 10%;
+	width: 80%;
+	padding: 10%;
 }
-.perfil-bronze-text{
+
+.home-perfil-bronze .grafico-bronze {
+	border-radius: 10px;
+	width: 100%;
+	padding: 10%;
+}
+
+.perfil-bronze-text {
 	background: var(--gradient-bronze-branco);
 	background-clip: text;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
 
-.beneficios-perfil-bronze{
+.beneficios-perfil-bronze {
 	background-color: #000;
 	height: 80vh;
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
 }
+
 .beneficios-perfil-bronze p {
 	color: #FFF;
 }
+
 .beneficios-perfil-bronze h1 {
 	color: #FFF;
 }
+
 .beneficios-perfil-bronze img {
 	border-radius: 15px;
-	width: 300%;
-	height: auto; /* Mantém a proporção da imagem */
-	margin-left: 20%;
-
+	margin-top: 40px;
+	width: 100%;
+	height: 200%;
 }
-.passo-perfil-bronze{
+
+.passo-perfil-bronze {
 	color: #FFF;
 	background-image: url(../assets/images/fundo-beneficios-bronze.png);
 	height: 110vh;
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
+
 .passo-perfil-bronze h4 {
 	color: #fff;
-	position: relative;
-    right: -320px; 
-	
 }
 
-
-.image-container {
-	display: flex;
-	flex-direction: column;
-	align-items: flex-end;
-
-}
-
-.image-container img {
+.passo-perfil-bronze img {
 	margin-bottom: 0px;
 	max-width: 100%;
 	border-radius: 15px;
-	width: 80%; /* Ajuste a largura conforme necessário */
-	height: auto; /* Mantém a proporção da imagem */
+	width: 80%;
+	height: auto;
 }
-.custom-margin {
-	position: relative;
-	right: 170px; /* Ajuste conforme necessário para mover para o lado direito */
-}
-.card-footer-bronze {
-	display: flex;
-	justify-content: center; /* Alinha o botão à direita */
-	background-color: #000;
-	color: #ffffff;
-	text-align: center;
-	width: 100%;
-	/* Ensure the header and footer take the full width of the card */
-	height: 90%;
-}
+
 .card-header-bronze {
-background-color: #634641;
+	background-color: #634641;
 	color: #ffffff;
 	text-align: center;
 	width: 100%;
-	/* Ensure the header and footer take the full width of the card */
 	height: 90%;
+}
 
+.card-body-bronze h6 {
+	color: #fff;
 
 }
-.card-body-bronze h6{
-	color: #fff ;
+
+.plan-image-bronze {
+	display: block;
+	margin: 0 auto;
 }
 
 .card-body-bronze .divider {
-border: 0;
-height: 3px;
-background: linear-gradient(to right, #634641, #fff, #634641);
-margin: 10px 0;
-/* Ajustar o espaçamento conforme necessário */
-opacity: 1;
-/* Garante que a opacidade esteja no máximo */
+	border: 0;
+	height: 3px;
+	background: linear-gradient(to right, #634641, #fff, #634641);
+	margin: 10px 0;
+	opacity: 1;
 }
+
 .card-body-bronze .divider-2 {
-border: 0;
-height: 3px;
-background: linear-gradient(to right, #634641, #fff, #634641);
-margin: 10px 0;
-/* Ajustar o espaçamento conforme necessário */
-opacity: 1;
-/* Garante que a opacidade esteja no máximo */
+	border: 0;
+	height: 3px;
+	background: linear-gradient(to right, #634641, #fff, #634641);
+	margin: 10px 0;
+	/* Ajustar o espaçamento conforme necessário */
+	opacity: 1;
+	/* Garante que a opacidade esteja no máximo */
+}
+
+.card-footer-bronze {
+	font-family: sora, Sans-serif;
+	font-size: 12px;
+	font-weight: 700;
+	fill: #fff;
+	color: #000000;
+	font-size: 16px !important;
+	background-image: black !important;
+	background-color: transparent;
+	border-radius: 4px;
+	margin-top: -10px;
+	max-width: 100%;
+	line-height: 1;
+	padding: 10px 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+
+}
+
+.card-footer-bronze .btn {
+	font-family: sora, Sans-serif;
+	fill: #000;
+	color: #000;
+	font-weight: 580;
+	font-size: 16px !important;
+	background-image: linear-gradient(to right, #fff, #fff) !important;
+	background-color: transparent;
+	border-radius: 4px;
+	max-width: 100%;
+	line-height: 1;
 }
 
 /* Media Queries */
@@ -1331,6 +1364,40 @@ opacity: 1;
 		margin-top: 20px;
 		margin-left: auto;
 		margin-right: auto;
+	}
+
+	.home-perfil-bronze {
+		height: 100vh;
+	}
+
+	.beneficios-perfil-bronze {
+		height: 100vh;
+	}
+
+	.beneficios-perfil-bronze img {
+		width: 80%;
+		height: auto;
+	}
+
+	.passo-perfil-bronze {
+		height: 100vh;
+	}
+
+	.card-header-bronze {
+		height: auto;
+	}
+
+	.card-footer-bronze {
+		padding: 20px 40px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	}
+
+	.card-footer-bronze .btn {
+		font-size: 18px !important;
+		padding: 10px 30px;
 	}
 }
 
@@ -1424,6 +1491,73 @@ opacity: 1;
 		margin-left: 0;
 		/* Remover margem esquerda */
 	}
+
+	.home-perfil-bronze {
+		height: auto;
+		padding: 20px 0;
+		max-width: 100%;
+	}
+
+	.beneficios-perfil-bronze {
+		height: auto;
+		padding: 20px 0;
+		max-width: 100%;
+	}
+
+	.beneficios-perfil-bronze img {
+		width: 100%;
+		height: auto;
+	}
+
+	.passo-perfil-bronze {
+		height: auto;
+		flex-direction: column;
+		text-align: center;
+		padding: 20px;
+		max-width: 100%;
+	}
+
+	.passo-perfil-bronze img {
+		width: 100%;
+	}
+
+	.card-header-bronze {
+		height: auto;
+		padding: 20px 0;
+	}
+
+	.card-footer-bronze {
+		padding: 20px 10px;
+		max-width: 100%;
+		display: flex;
+		/* Adicionado */
+		justify-content: center;
+		/* Adicionado */
+		align-items: center;
+		text-align: center;
+	}
+
+	.card-footer-bronze .btn {
+		font-size: 14px !important;
+		padding: 10px 20px;
+		width: 100%;
+	}
+
+	/* Adicionando estilos específicos para garantir o empilhamento no mobile */
+	.d-flex {
+		flex-direction: column !important;
+	}
+
+	.col-lg-8,
+	.col-lg-4 {
+		max-width: 100%;
+		flex: 0 0 100%;
+	}
+
+	.col-lg-4 {
+		margin-top: 20px !important;
+	}
+
 }
 
 
@@ -1464,68 +1598,133 @@ opacity: 1;
 		padding: 8px;
 	}
 
-	@media (max-width: 1728px) {
-		.card-header .plan-name {
-			font-size: 1.25rem;
-		}
-
-		.card-header .plan-value {
-			font-size: 1.5rem;
-		}
-
-		.card-body {
-			padding: 0 15px 15px 15px;
-		}
-
-		.card-body .plan-description {
-			font-size: 12px;
-		}
-
-		.card-body .plan-benefits li {
-			font-size: 0.8rem;
-		}
-
-		.card-footer .btn {
-			font-size: 0.8rem;
-			padding: 8px 12px;
-		}
-
-		.plan-disclaimer {
-			font-size: 9px;
-		}
-
-		.about h2 {
-			font-size: 1.75rem;
-		}
-
-		.about p {
-			font-size: 1rem;
-		}
-
-		.about .btn {
-			font-size: 0.875rem;
-			padding: 8px 16px;
-		}
-
-		.about img {
-			margin-top: 10px;
-		}
-
-		.about .my-3 {
-			margin: 1rem 0;
-		}
-
-		.about .container {
-			padding: 0 15px;
-		}
-
-		.about .row {
-			margin: 0;
-		}
-
-		.about .col-lg-7 {
-			padding: 0;
-		}
+	.home-perfil-bronze {
+		height: auto;
+		padding: 10px 0;
 	}
 
+	.home-perfil-bronze p {
+		font-size: 14px;
+	}
+
+	.beneficios-perfil-bronze {
+		height: auto;
+		padding: 10px 0;
+	}
+
+	.beneficios-perfil-bronze p,
+	.beneficios-perfil-bronze h1 {
+		font-size: 18px;
+	}
+
+	.beneficios-perfil-bronze img {
+		width: 100%;
+		height: auto;
+	}
+
+	.passo-perfil-bronze {
+		height: auto;
+		flex-direction: column;
+		text-align: center;
+		padding: 10px;
+	}
+
+	.passo-perfil-bronze h4 {
+		font-size: 18px;
+	}
+
+	.passo-perfil-bronze img {
+		width: 100%;
+	}
+
+	.card-header-bronze {
+		height: auto;
+		padding: 10px 0;
+	}
+
+	.card-body-bronze h6 {
+		font-size: 16px;
+	}
+
+	.card-body-bronze .divider,
+	.card-body-bronze .divider-2 {
+		height: 2px;
+	}
+
+	.card-footer-bronze {
+		font-size: 14px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	}
+
+	.card-footer-bronze .btn {
+		width: 100%;
+	}
+
+}
+
+@media (max-width: 1728px) {
+	.card-header .plan-name {
+		font-size: 1.25rem;
+	}
+
+	.card-header .plan-value {
+		font-size: 1.5rem;
+	}
+
+	.card-body {
+		padding: 0 15px 15px 15px;
+	}
+
+	.card-body .plan-description {
+		font-size: 12px;
+	}
+
+	.card-body .plan-benefits li {
+		font-size: 0.8rem;
+	}
+
+	.card-footer .btn {
+		font-size: 0.8rem;
+		padding: 8px 12px;
+	}
+
+	.plan-disclaimer {
+		font-size: 9px;
+	}
+
+	.about h2 {
+		font-size: 1.75rem;
+	}
+
+	.about p {
+		font-size: 1rem;
+	}
+
+	.about .btn {
+		font-size: 0.875rem;
+		padding: 8px 16px;
+	}
+
+	.about img {
+		margin-top: 10px;
+	}
+
+	.about .my-3 {
+		margin: 1rem 0;
+	}
+
+	.about .container {
+		padding: 0 15px;
+	}
+
+	.about .row {
+		margin: 0;
+	}
+
+	.about .col-lg-7 {
+		padding: 0;
+	}
 }
