@@ -163,8 +163,6 @@ li {
 	padding: 0 20px;
 	background-color: var(--primary);
 	height: 70px;
-
-	/* Altura fixa para a barra de navegação */
 }
 
 .navbar .logo-image img {
@@ -184,7 +182,6 @@ li {
 .offcanvas-collapse {
 	position: fixed;
 	top: 2.75rem;
-	/* adjusts the height between the top of the page and the offcanvas menu */
 	bottom: 0;
 	left: 100%;
 	width: 100%;
@@ -301,7 +298,6 @@ li {
 	max-width: 100%;
 	height: auto;
 	margin-top: 20px;
-	/* Ajuste o valor conforme necessário */
 }
 
 .payment {
@@ -310,57 +306,37 @@ li {
 	background-position: center;
 	background-repeat: no-repeat;
 	width: 100vw;
-	/* Garante que a largura seja 100% da viewport */
 	height: 100vh;
-	/* Garante que a altura seja 100% da viewport */
 	display: flex;
-	/* Define o layout flex */
 	justify-content: flex-end;
-	/* Alinha itens ao final (parte inferior) */
 	align-items: center;
-	/* Centraliza itens horizontalmente */
 	flex-direction: column;
-	/* Alinha itens verticalmente */
 }
 
 .payment-box {
 	width: 1000px;
-	/* Define a largura do quadrado */
 	height: 900px;
-	/* Define a altura do quadrado */
 	background-color: rgba(255, 255, 255, 0.9);
-	/* Define a cor de fundo do quadrado */
 	border-radius: 10px;
-	/* Adiciona bordas arredondadas */
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-	/* Adiciona sombra ao quadrado */
 	text-align: center;
-	/* Centraliza o texto dentro do quadrado */
 	padding: 20px;
-	/* Adiciona padding dentro do quadrado */
 	position: relative;
-	/* Garante que o logo pode ser posicionado relativamente */
 	max-width: 100%;
 	max-width: 100%;
 }
 
 .payment-logo {
 	width: 100px;
-	/* Define a largura do logo */
 	height: auto;
-	/* Mantém a proporção do logo */
 	position: absolute;
-	/* Posiciona o logo absolutamente */
 	top: 20%;
 	left: 50%;
-	/* Centraliza o logo horizontalmente */
 	transform: translateX(-50%);
-	/* Ajusta a posição do logo para ficar centralizado */
 }
 
 .payment-content {
 	margin-top: 300px;
-	/* Adiciona espaço acima do conteúdo para o logo */
 	font-size: 20px;
 }
 
@@ -807,7 +783,6 @@ li {
 
 .slider-1 .swiper-button-prev:focus,
 .slider-1 .swiper-button-next:focus {
-	/* even if you can't see it chrome you can see it on mobile device */
 	outline: none;
 }
 
@@ -1209,6 +1184,10 @@ li {
 	background-repeat: no-repeat;
 }
 
+.home-perfil-bronze h1 {
+	margin-top: -10vh;
+}
+
 .home-perfil-bronze p {
 	color: #FFF;
 }
@@ -1223,6 +1202,7 @@ li {
 .home-perfil-bronze .grafico-bronze {
 	border-radius: 10px;
 	width: 100%;
+	height: auto;
 	padding: 10%;
 }
 
@@ -1246,6 +1226,7 @@ li {
 }
 
 .beneficios-perfil-bronze h1 {
+	margin-top: -15vh;
 	color: #FFF;
 }
 
@@ -1652,8 +1633,12 @@ li {
 		padding: 10px 0;
 	}
 
-	.beneficios-perfil-bronze p,
 	.beneficios-perfil-bronze h1 {
+		margin-top: -20vh;
+		font-size: 40px;
+	}
+
+	.beneficios-perfil-bronze p {
 		font-size: 18px;
 	}
 
