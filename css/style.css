@@ -28,6 +28,7 @@ Table Of Contents:
 	--gradient: linear-gradient(to right, #03D6F3, #000AFF);
 	--gradient-bronze: linear-gradient(to right, #634641, #fff, #634641);
 	--gradient-bronze-branco: linear-gradient(to right, #fff, #634641, #fff, #634641);
+	--gradient-empresa: linear-gradient(to right, #ffffff, #2C4362, #ffffff, #ffffff, #ffffff);
 	--quarter: #000AFF;
 }
 
@@ -753,7 +754,7 @@ li {
 	text-align: center;
 }
 
-.card-footer .btn-more:hover {
+.card-footer .btn-more-gold:hover {
 	transform: scale(1.1);
 }
 
@@ -1007,7 +1008,7 @@ li {
 
 .home-about {
 	background-image: url(../assets/images/home-article.png);
-	height: 92vh;
+	height: 120vh;
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -1050,10 +1051,15 @@ li {
 	font-size: 20px;
 }
 
+.home-about img {
+	border-radius: 15px;
+
+}
+
 .algo-trading {
 
 	background-color: #000;
-	height: 60vh;
+	height: 80vh;
 
 }
 
@@ -1073,7 +1079,7 @@ li {
 
 .estatistica {
 	background-image: url(../assets/images/estatistica-about.png);
-	height: 60vh;
+	height: 70vh;
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -1091,6 +1097,7 @@ li {
 
 .sobre-nt {
 	background-color: #000;
+	max-height: 30vh;
 }
 
 
@@ -1101,6 +1108,39 @@ li {
 
 .sobre-nt p {
 	color: #ffffff;
+	margin-right: 25%
+		/* Ajuste conforme necessário */
+		1104 1127 1128 1129
+}
+
+.sobre-nt img {
+	width: 20%;
+
+}
+
+.empresa-text {
+	background: var(--gradient-empresa);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.text-image-container-empresa {
+	display: flex;
+	align-items: flex-start;
+
+}
+
+.text-image-container-empresa img {
+	width: 20%;
+	/* Ajuste a largura conforme necessário */
+	margin-left: 20px;
+
+}
+
+.spacing {
+	margin-right: 5%;
+	/* Ajuste o valor conforme necessário */
 
 }
 
