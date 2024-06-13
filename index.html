@@ -16,19 +16,27 @@
     <meta property="og:description" content="" /> <!-- description shown in the actual shared post -->
     <meta property="og:image" content="" /> <!-- image link, make sure it's jpg -->
     <meta property="og:url" content="" /> <!-- where do you want your post to link to -->
-    <meta name="twitter:card" content="summary_large_image"> <!-- to have large image post format in Twitter -->
 
     <!-- Webpage Title -->
-    <title>NT Investment</title>
+    <title>NT Technology</title>
 
-    <!-- Styles -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
-    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <!-- Styles SERVER -->
+    <!--
+    <link href="http://nttechnology.com.br/css/fonts-google.css" rel="stylesheet">
+    <link href="http://nttechnology.com.br/css/bootstrap.min.css" rel="stylesheet">
     <link href="./css/fontawesome-all.min.css" rel="stylesheet">
-    <link href="./css/aos.min.css" rel="stylesheet">
-    <link href="./css/swiper.css" rel="stylesheet">
-    <link href="./css/style.css" rel="stylesheet">
+    <link href="http://nttechnology.com.br/css/aos.min.css" rel="stylesheet">
+    <link href="http://nttechnology.com.br/css/swiper.css" rel="stylesheet">
+    <link href="http://nttechnology.com.br/css/style.css" rel="stylesheet">
+    -->
 
+    <!-- Styles LOCAL -->
+    <link href="http://nttechnology.com.br/css/fonts-google.css" rel="stylesheet">
+    <link href="http://nttechnology.com.br/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/fontawesome-all.min.css" rel="stylesheet">
+    <link href="http://nttechnology.com.br/css/aos.min.css" rel="stylesheet">
+    <link href="http://nttechnology.com.br/css/swiper.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 
 </head>
 
@@ -42,7 +50,7 @@
             <!--<a class="navbar-brand logo-image" href="index.html"><img src="./assets/images/logo.svg" alt="alternative"></a>-->
 
             <!-- Text Logo - Use this if you don't have a graphic logo -->
-            <a class="navbar-brand logo-text" href="index.html">NT Investment</a>
+            <a class="navbar-brand logo-text" href="index.html">NT Technology</a>
 
             <button class="navbar-toggler p-0 border-0" type="button" id="navbarSideCollapse"
                 aria-label="Toggle navigation">
@@ -63,31 +71,30 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#about">Sobre nós</a>
                     </li>
-                    <!--
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false" href="#">Drop</a>
-                        
+                        <a class="nav-link dropdown-toggle" id="dropdown01" data-bs-toggle="dropdown"
+                            aria-expanded="false" href="#">Planos</a>
+
                         <ul class="dropdown-menu" aria-labelledby="dropdown01">
-                            <li><a class="dropdown-item" href="article.html">Article Details</a></li>
-                            <li><div class="dropdown-divider"></div></li>
-                            <li><a class="dropdown-item" href="terms.html">Terms Conditions</a></li>
-                            <li><div class="dropdown-divider"></div></li>
-                            <li><a class="dropdown-item" href="privacy.html">Privacy Policy</a></li>
+                            <li><a class="dropdown-item" href="plano-bronze.html#header">Perfil BRONZE</a></li>
+                            <li>
+                                <div class="dropdown-divider"></div>
+                            </li>
+                            <li><a class="dropdown-item" href="plano-prata.html#home-prata">Perfil PRATA</a></li>
+                            <li>
+                                <div class="dropdown-divider"></div>
+                            </li>
+                            <li><a class="dropdown-item" href="plano-ouro.html#home-ouro">Perfil OURO</a></li>
+                            <li>
+                                <div class="dropdown-divider"></div>
+                            </li>
+                            <li><a class="dropdown-item" href="plano-diamante.html#home-diamante">Perfil DIAMANTE</a></li>
                         </ul>
                     </li>
-                -->
                     <li class="nav-item">
                         <a class="nav-link" href="#faqAccordion">FAQ</a>
                     </li>
                 </ul>
-                <span class="nav-item social-icons">
-                    <span class="fa-stack">
-                        <a href="#your-link">
-                            <i class="fas fa-circle fa-stack-2x"></i>
-                            <i class="fab fa-whatsapp fa-stack-1x"></i>
-                        </a>
-                    </span>
-                </span>
             </div> <!-- end of navbar-collapse -->
         </div> <!-- end of container -->
     </nav> <!-- end of navbar -->
@@ -97,9 +104,10 @@
     <!-- Home -->
     <section class="home py-5 d-flex align-items-center" id="header">
         <div class="container text-light py-5" data-aos="fade-right">
-            <h1 class="headline">Invista com os <br><span class="home_text">Robôs de Investimento</span><br>mais
+            <h1 class="headline">Invista com os <br><span class="home_text">Robôs de Investimentos</span><br>mais
                 lucrativos do<br>mercado financeiro</h1>
-            <p class="para para-light py-3">Tenha acesso às estratégias de investimento dos melhores traders do
+            <p class="para para-light py-3 mobile-hide">Tenha acesso às estratégias de investimentos dos melhores
+                traders do
                 mercado, sem precisar passar horas estudando gráficos ou analisando tendências. <br>
                 Com nosso serviço de Copy Trading automatizado, chegou a hora de impulsionar os seus investimentos!
             </p>
@@ -112,7 +120,7 @@
                 <p>Crescimento exponêncial do seu capital </p>
             </div>
             <div class="my-3">
-                <a class="btn" href="#plans">Inscreva-se já</a>
+                <a class="btn" href="#plans">Comprar agora</a>
             </div>
         </div> <!-- end of container -->
     </section> <!-- end of home -->
@@ -159,7 +167,8 @@
                                 <!-- Slide -->
                                 <div class="swiper-slide">
                                     <div class="testimonial-card p-4">
-                                        <p>I've been on this copy for a month, and the return is actually at least 25%, great risk management and all orders had SL. Very happy with the return.</p>
+                                        <p>I've been on this copy for a month, and the return is actually at least 25%,
+                                            great risk management and all orders had SL. Very happy with the return.</p>
                                         <div class="d-flex pt-4">
                                             <div>
                                                 <!--<img class="avatar" src="./assets/images/testimonial-2.jpg"-->
@@ -176,7 +185,8 @@
                                 <!-- Slide -->
                                 <div class="swiper-slide">
                                     <div class="testimonial-card p-4">
-                                        <p>Análise de mercado muito assertiva por parte do robô, tenho gostado dos resultados</p>
+                                        <p>Análise de mercado muito assertiva por parte do robô, tenho gostado dos
+                                            resultados</p>
                                         <div class="d-flex pt-4">
                                             <div>
                                                 <!--<img class="avatar" src="./assets/images/testimonial-2.jpg"-->
@@ -193,13 +203,14 @@
                                 <!-- Slide -->
                                 <div class="swiper-slide">
                                     <div class="testimonial-card p-4">
-                                        <p>Trabalho muito consistente, um investimento que com certeza não me arrependi</p>
+                                        <p>Trabalho muito consistente, um investimento que com certeza não me arrependo
+                                        </p>
                                         <div class="d-flex pt-4">
                                             <div>
                                                 <!--<img class="avatar" src="./assets/images/testimonial-2.jpg"-->
                                             </div>
                                             <div class="ms-3 pt-2">
-                                                <p>Brendo Thierry</p>
+                                                <h6>Brendo Thierry</h6>
                                                 <p>Usuário Investidor</p>
                                             </div>
                                         </div>
@@ -234,7 +245,8 @@
                 <div class="col-lg-7 text-right" data-aos="fade-right">
                     <h2 class="py-2">Nosso serviço foi desenvolvido para você não precisar ficar horas em frente ao
                         computador</h2>
-                    <p class="py-2 para-light">Aproveite a experiência profissional para alcançar suas metas de forma eficiente.</p>
+                    <p class="py-2 para-light">Aproveite a experiência profissional para alcançar suas metas de forma
+                        eficiente.</p>
                     <p class="py-2 para-light">Nossa plataforma é projetada para oferecer suporte contínuo,
                         transparência e resultados comprovados, tudo isso enquanto você se concentra no que realmente
                         importa em sua vida.</p>
@@ -243,7 +255,7 @@
                         <img src="./assets/images/tabela.png" class="img-fluid" alt="Descrição da Imagem">
                     </div>
                     <div class="my-3">
-                        <a class="btn" href="#your-link">Saiba Mais</a>
+                        <a class="btn" href="about.html#home-about" target="_blank">Saiba Mais</a>
                     </div>
                 </div>
             </div> <!-- end of row -->
@@ -334,106 +346,156 @@
                             consequatur doloribus natus in suscipit!</p>
                     </div>
                 </div>
-            -->
-    </div> <!-- end of row -->
-    </div> <!-- end of container -->
-    </section> <!-- end of services -->
+            
+    </div> 
+    </div>
+    </section> 
+    -->
+    <!-- end of services -->
 
-
-    <!-- Plans -->
     <section class="plans d-flex align-items-center py-5" id="plans">
         <div class="container text-light">
             <div class="text-center pb-4">
                 <h2 class="py-2">Escolha o melhor plano pra você</h2>
             </div>
             <div class="row gy-4" data-aos="zoom-in">
+                <!-- Card 1 -->
                 <div class="col-lg-3">
-                    <div class="card bg-transparent px-4">
-                        <h4 class="py-2"> <span class="plans_text">PERFIL 1</span></h4>
-                        <p class="py-3">Ideal para quem está começando no mundo do Copy Trading. Com um investimento
-                            inicial acessível,
-                            você pode se beneficiar do nosso serviço e ver seus lucros crescerem de forma consistente.
-                        </p>
-                        <div class="block d-flex align-items-center">
-                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Valor Investido: 400 USD</p>
+                    <div class="card bg-transparent px-1">
+                        <div class="card-header">
+                            <div class="plan-name">PERFIL <br>
+                                <h2>BRONZE</h2>
+                                <h6>PLANO TRIMESTRAL</h6>
+                            </div>
                         </div>
-                        <div class="block d-flex align-items-center">
-                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Porcentagem de Lucro: De 10% a 50%</p>
+                        <div class="card-body">
+                            <div class="plan-value"><img class="plan-image" src="./assets/images/plans-1.png"
+                                    alt="Valor do plano"></div>
+                            <p class="plan-description text-center">Aquisição do plano</p>
+                            <hr class="divider">
+                            <h6 class="plan-subdescription">Valor de investimento: R$ 2.200</h6>
+                            <hr class="divider-2">
+                            <ul class="plan-benefits">
+                                <li><i class="fas fa-check-circle icon-benefits"></i> Atendimento em até 1 dia útil</li>
+                                <li><i class="fas fa-check-circle icon-benefits"></i> Retirada de lucros semanalmente
+                                </li>
+                                <li><i class="fas fa-check-circle icon-benefits"></i> Ganhos semanais entre R$ 150,00 à
+                                    R$ 400,00</li>
+                            </ul>
                         </div>
-                        <h4 class="py-3">USD 30.00</h4>
-                        <div class="my-3 d-flex justify-content-center">
-                            <a class="btn" href="#your-link">Increva-se já!</a>
+                        <div class="card-footer">
+                            <a class="btn" href="https://mpago.li/1osPmo7" target="_blank">CONTRATAR ASSINATURA</a>
+                            <a class="btn-more" href="plano-bronze.html#header" target="_blank">SAIBA MAIS</a>
+                            <p class="plan-disclaimer">*Os valores recomendados foram baseados no intervalo de um
+                                período de 12 meses</p>
                         </div>
                     </div>
                 </div>
 
+                <!-- Card 2 -->
                 <div class="col-lg-3">
-                    <div class="card bg-transparent px-4">
-                        <h4 class="py-2"> <span class="plans_text">PERFIL 2</span></h4>
-                        <p class="py-3">Perfeito para investidores que desejam aumentar seu potencial de lucro. Com um
-                            investimento moderado, você terá acesso a estratégias mais robustas e suporte aprimorado.
-                        </p>
-                        <div class="block d-flex align-items-center">
-                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Valor Investido: 800 USD</p>
+                    <div class="card bg-transparent px-1">
+                        <div class="card-header">
+                            <div class="plan-name">PERFIL<br>
+                                <h2>PRATA</h2>
+                                <h6>PLANO TRIMESTRAL</h6>
+                            </div>
                         </div>
-                        <div class="block d-flex align-items-center">
-                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Porcentagem de Lucro: De 10% a 50%</p>
+                        <div class="card-body">
+                            <div class="plan-value"><img class="plan-image" src="./assets/images/plans-2.png"
+                                    alt="Valor do plano"></div>
+                            <p class="plan-description text-center">AQUISIÇÃO DO PLANO</p>
+                            <hr class="divider">
+                            <h6 class="plan-subdescription">Valor de investimento: R$ 4.400</h6>
+                            <hr class="divider-2">
+                            <ul class="plan-benefits">
+                                <li><i class="fas fa-check-circle icon-benefits"></i><span>Atendimento em até 1 dia
+                                        útil</span></li>
+                                <li><i class="fas fa-check-circle icon-benefits"></i><span>Retirada de lucros
+                                        semanalmente</span></li>
+                                <li><i class="fas fa-check-circle icon-benefits"></i><span>Ganhos semanais entre R$
+                                        300,00 à R$ 800,00</span></li>
+                            </ul>
                         </div>
-                        <h4 class="py-3">USD 60.00</h4>
-                        <div class="my-3 d-flex justify-content-center">
-                            <a class="btn" href="#your-link">Increva-se já!</a>
+                        <div class="card-footer">
+                            <a class="btn" href="https://mpago.li/11dR3yS" target="_blank">CONTRATAR ASSINATURA</a>
+                            <a class="btn-more" href="plano-prata.html#home-prata" target="_blank">SAIBA MAIS</a>
+                            <p class="plan-disclaimer">*Os valores recomendados foram baseados no intervalo de um
+                                período de 12 meses</p>
                         </div>
                     </div>
                 </div>
 
+                <!-- Card 3 -->
                 <div class="col-lg-3">
-                    <div class="card bg-transparent px-4">
-                        <h4 class="py-2"><span class="plans_text">PERFIL 3</span></h4>
-                        <p class="py-3">Perfeito para investidores que desejam aumentar seu potencial de lucro. Com um
-                            investimento moderado, você terá acesso a estratégias mais robustas e suporte aprimorado.
-                        </p>
-                        <div class="block d-flex align-items-center">
-                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Valor Investido: 1200 USD</p>
+                    <div class="card bg-transparent px-1">
+                        <div class="card-header">
+                            <div class="plan-name">PERFIL <br>
+                                <h2>OURO</h2>
+                                <h6>PLANO TRIMESTRAL</h6>
+                            </div>
                         </div>
-                        <div class="block d-flex align-items-center">
-                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Porcentagem de Lucro: De 10% a 50%</p>
+                        <div class="card-body">
+                            <div class="plan-value"><img class="plan-image" src="./assets/images/plans-3.png"
+                                    alt="Valor do plano"></div>
+                            <p class="plan-description text-center">AQUISIÇÃO DO PLANO</p>
+                            <hr class="divider">
+                            <h6 class="plan-subdescription">Valor de investimento: R$ 8.800</h6>
+                            <hr class="divider-2">
+                            <ul class="plan-benefits">
+                                <li><i class="fas fa-check-circle icon-benefits"></i> Atendimento em até 1 dia útil
+                                </li>
+                                <li><i class="fas fa-check-circle icon-benefits"></i> Retirada de lucros semanalmente
+                                </li>
+                                <li><i class="fas fa-check-circle icon-benefits"></i> Ganhos semanais entre R$ 600,00 à
+                                    R$ 1.600</li>
+                            </ul>
                         </div>
-                        <h4 class="py-3">USD 90.00</h4>
-                        <div class="my-3 d-flex justify-content-center">
-                            <a class="btn" href="#your-link">Increva-se já!</a>
+                        <div class="card-footer">
+                            <a class="btn" href="https://mpago.li/2k4Ya8M" target="_blank">CONTRATAR ASSINATURA</a>
+                            <a class="btn-more" href="plano-ouro.html#home-ouro" target="_blank">SAIBA MAIS</a>
+                            <p class="plan-disclaimer">*Os valores recomendados foram baseados no intervalo de um
+                                período de 12 meses</p>
                         </div>
                     </div>
                 </div>
 
+                <!-- Card 4 -->
                 <div class="col-lg-3">
-                    <div class="card bg-transparent px-4">
-                        <h4 class="py-2"><span class="plans_text">PERFIL 4</span></h4>
-                        <p class="py-3">Destinado a investidores experientes que buscam maximizar seus retornos. Com um
-                            investimento significativo, você poderá copiar as operações dos melhores traders do mercado.
-                        </p>
-                        <div class="block d-flex align-items-center">
-                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Valor Investido: 1200 USD</p>
+                    <div class="card bg-transparent px-1">
+                        <div class="card-header">
+                            <div class="plan-name">PERFIL <br>
+                                <h2>DIAMANTE</h2>
+                                <h6>PLANO TRIMESTRAL</h6>
+                            </div>
                         </div>
-                        <div class="block d-flex align-items-center">
-                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Porcentagem de Lucro: De 10% a 50%</p>
+                        <div class="card-body">
+                            <div class="plan-value"><img class="plan-image" src="./assets/images/plans-4.png"
+                                    alt="Valor do plano"></div>
+                            <p class="plan-description text-center">AQUISIÇÃO DO PLANO</p>
+                            <hr class="divider">
+                            <h6 class="plan-subdescription">Valor de investimento: R$17.600</h6>
+                            <hr class="divider-2">
+                            <ul class="plan-benefits">
+                                <li><i class="fas fa-check-circle icon-benefits"></i> Atendimento em até 1 dia útil</li>
+                                <li><i class="fas fa-check-circle icon-benefits"></i> Retirada de lucros semanalmente
+                                </li>
+                                <li><i class="fas fa-check-circle icon-benefits"></i> Ganhos semanais entre R$ 1200.00 à
+                                    R$ 3.200</li>
+                            </ul>
                         </div>
-                        <h4 class="py-3">USD 120.00</h4>
-                        <div class="my-3 d-flex justify-content-center">
-                            <a class="btn" href="#your-link">Increva-se já!</a>
+                        <div class="card-footer">
+                            <a class="btn" href="https://mpago.li/2fYjEkB" target="_blank">CONTRATAR ASSINATURA</a>
+                            <a class="btn-more" href="plano-diamante.html#home-diamante" target="_blank">SAIBA MAIS</a>
+                            <p class="plan-disclaimer">*Os valores recomendados foram baseados no intervalo de um
+                                período de 12 meses</p>
                         </div>
                     </div>
                 </div>
+
             </div> <!-- end of row -->
         </div> <!-- end of container -->
-    </section> <!-- end of plans -->
+    </section>
 
 
     <!-- FAQ -->
@@ -444,7 +506,7 @@
             </div>
             <div class="accordion" id="faqAccordion">
                 <div class="card">
-                    <div class="card-header" id="headingOne">
+                    <div class="card-header-carrocel" id="headingOne">
                         <h2 class="mb-0">
                             <button class="btn-accordion" type="button" data-toggle="collapse"
                                 data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
@@ -453,14 +515,14 @@
                         </h2>
                     </div>
                     <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#faqAccordion">
-                        <div class="card-body">
+                        <div class="card-body-corrocel">
                             Não, você não precisa usar a ferramenta todos os dias, mas recomendamos o uso regular para
                             obter melhores resultados.
                         </div>
                     </div>
                 </div>
                 <div class="card">
-                    <div class="card-header" id="headingTwo">
+                    <div class="card-header-carrocel" id="headingTwo">
                         <h2 class="mb-0">
                             <button class="btn-accordion collapsed" type="button" data-toggle="collapse"
                                 data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
@@ -469,14 +531,14 @@
                         </h2>
                     </div>
                     <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#faqAccordion">
-                        <div class="card-body">
+                        <div class="card-body-corrocel">
                             O custo da ferramenta varia dependendo do plano escolhido. Consulte nossa página de preços
                             para mais detalhes.
                         </div>
                     </div>
                 </div>
                 <div class="card">
-                    <div class="card-header" id="headingThree">
+                    <div class="card-header-carrocel" id="headingThree">
                         <h2 class="mb-0">
                             <button class="btn-accordion collapsed" type="button" data-toggle="collapse"
                                 data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
@@ -485,13 +547,13 @@
                         </h2>
                     </div>
                     <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#faqAccordion">
-                        <div class="card-body">
+                        <div class="card-body-corrocel">
                             Recomendamos a retirada semanal dos lucros.
                         </div>
                     </div>
                 </div>
                 <div class="card">
-                    <div class="card-header" id="headingFour">
+                    <div class="card-header-carrocel" id="headingFour">
                         <h2 class="mb-0">
                             <button class="btn-accordion collapsed" type="button" data-toggle="collapse"
                                 data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
@@ -500,7 +562,7 @@
                         </h2>
                     </div>
                     <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#faqAccordion">
-                        <div class="card-body">
+                        <div class="card-body-corrocel">
                             Nosso suporte está disponível de segunda-feira à sexta-feira, das 09:00 às 18:00 para ajudar
                             com quaisquer dúvidas ou problemas que você possa ter.
                             Entre em contato via Whatsapp ou através do nosso site.
@@ -508,7 +570,7 @@
                     </div>
                 </div>
                 <div class="card">
-                    <div class="card-header" id="headingFive">
+                    <div class="card-header-carrocel" id="headingFive">
                         <h2 class="mb-0">
                             <button class="btn-accordion collapsed" type="button" data-toggle="collapse"
                                 data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
@@ -517,7 +579,7 @@
                         </h2>
                     </div>
                     <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#faqAccordion">
-                        <div class="card-body">
+                        <div class="card-body-corrocel">
                             O Robô trabalha na plataforma do Meta Trader 5 e roda exclusivamente na IC Markets.
                         </div>
                     </div>
@@ -529,9 +591,10 @@
     <section class="location text-light py-5">
         <div class="container" data-aos="zoom-in">
             <div class="row justify-content-center text-center">
-                <div class="col-lg-3 d-flex align-items-center justify-content-center">
+                <div class="col-lg-3 d-flex align-items-center flex-column">
                     <div class="p-2">
-                        <a href="https://www.instagram.com/nttechnology_01/" target="_blank" class="text-light">
+                        <a href="https://www.instagram.com/nttechnologyinvestimentos" target="_blank"
+                            class="text-light">
                             <i class="fab fa-instagram fa-3x py-2"></i>
                         </a>
                     </div>
@@ -540,17 +603,17 @@
                         <span class="plans_text">@nttechnology_01</span>
                     </div>
                 </div>
-                <div class="col-lg-3 d-flex align-items-center">
+                <div class="col-lg-3 d-flex align-items-center flex-column">
                     <div class="p-2"><i class="far fa-envelope fa-3x"></i></div>
                     <div class="ms-2">
                         <h6>Entre em contato</h6>
-                        <p>ntinvestment@gmail.com</p>
+                        <p>suportefinanceiro@nttechnology.com.br</p>
                     </div>
                 </div>
-                <div class="col-lg-3 d-flex align-items-center">
+                <div class="col-lg-3 d-flex align-items-center flex-column">
                     <div class="p-2"><i class="far fa-clock fa-3x"></i></div>
                     <div class="ms-2">
-                        <h6><br>Horário de atendimento</h6>
+                        <h6>Horário de atendimento</h6>
                         <p>SEG - SEX <br> 09:00 - 18:00</p>
                     </div>
                 </div>
@@ -561,9 +624,18 @@
 
     <!-- Bottom -->
     <div class="bottom py-2 text-light">
-        <div class="container d-flex justify-content-between">
+        <div class="row justify-content-center text-center">
             <div>
-                <p>Todos os direito reservados © 2024 NT Technology</p><br>
+                <p>Todos os direito reservados © 2024 NT Technology</p>
+                <br>
+                <a href="terms.html#header" target="_blank">
+                    <span class="fas fa-arrow-right"></span>
+                    <span class="link-text">Aviso Legal</span>
+                </a>
+                <a href="privacy.html#header" target="_blank">
+                    <span class="fas fa-arrow-right"></span>
+                    <span class="link-text">Política de privacidade</span>
+                </a>
             </div>
         </div> <!-- end of container -->
     </div> <!-- end of bottom -->
@@ -576,19 +648,31 @@
     <!-- end of back to top button -->
 
     <!-- Ícone Flutuante do WhatsApp -->
-    <a href="https://wa.me/SeuNumeroDeTelefone" class="whatsapp-float" target="_blank">
+    <a href="https://wa.me/+5513996687982" class="whatsapp-float" target="_blank">
         <img src="./assets/images/whatsapp-logo.svg" class="whatsapp-icon">
     </a>
 
-    <!-- Scripts -->
-    <script src="./js/bootstrap.min.js"></script><!-- Bootstrap framework -->
-    <script src="./js/purecounter.min.js"></script> <!-- Purecounter counter for statistics numbers -->
-    <script src="./js/swiper.min.js"></script><!-- Swiper for image and text sliders -->
-    <script src="./js/aos.js"></script><!-- AOS on Animation Scroll -->
-    <script src="./js/script.js"></script> <!-- Custom scripts -->
+    <!-- Scripts LOCAL -->
+    <!--
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./js/purecounter.min.js"></script>
+    <script src="./js/script.js"></script>
+    -->
+
+    <!-- Scripts SERVER -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="http://nttechnology.com.br/js/popper.min.js"></script>
+    <script src="http://nttechnology.com.br/js/bootstrap.min.js"></script>
+    <script src="http://nttechnology.com.br/js/swiper.js"></script>
+    <script src="http://nttechnology.com.br/js/aos.js"></script>
+    <script src="http://nttechnology.com.br/js/purecounter.min.js"></script>
+    <script src="http://nttechnology.com.br/js/script.js"></script>
+
+
 
     <script>
         $(document).ready(function () {
