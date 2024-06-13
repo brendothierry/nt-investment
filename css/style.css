@@ -28,7 +28,10 @@ Table Of Contents:
 	--gradient: linear-gradient(to right, #03D6F3, #000AFF);
 	--gradient-bronze: linear-gradient(to right, #634641, #fff, #634641);
 	--gradient-bronze-branco: linear-gradient(to right, #fff, #634641, #fff, #634641);
+	--gradient-prata: linear-gradient(to right, #808080,	#D3D3D3, 	#A9A9A9, #C0C0C0 );
 	--gradient-empresa: linear-gradient(to right, #ffffff, #2C4362, #ffffff, #ffffff, #ffffff);
+	--gradient-diamante:linear-gradient(to right, #B9F2FF,	#008B8B, 	#66CDAA, #008B8B, #AFEEEE );
+	--gradient-ouro:linear-gradient(to right, #DAA520,	#CD853F, #D4AF37 );
 	--quarter: #000AFF;
 }
 
@@ -1037,6 +1040,11 @@ li {
 	height: 80vh;
 
 }
+.algo-trading img {
+
+border-radius: 10px;
+
+}
 
 .algo-trading h1 {
 	color: #ffffff;
@@ -1069,10 +1077,15 @@ li {
 	color: #ffffff;
 
 }
+.estatistica img {
+
+	border-radius: 8px;
+	
+}
 
 .sobre-nt {
 	background-color: #000;
-	max-height: 30vh;
+	max-height: 40vh;
 }
 
 
@@ -1090,7 +1103,6 @@ li {
 
 .sobre-nt img {
 	width: 20%;
-
 }
 
 .empresa-text {
@@ -1329,6 +1341,184 @@ li {
 	border-radius: 4px;
 	max-width: 100%;
 	line-height: 1;
+}
+
+/* Perfil Prata */
+
+.perfil-prata-text {
+	background: var(--gradient-prata);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.card-header-prata {
+	background-color:#808080;
+	color: #ffffff;
+	text-align: center;
+	width: 100%;
+	height: 90%;
+}
+
+.card-body-prata h6 {
+	color: #fff;
+
+}
+.card-body-prata .divider {
+	border: 0;
+	height: 3px;
+	background: linear-gradient(to right, #808080,	#D3D3D3, 	#A9A9A9, #C0C0C0 );
+	margin: 10px 0;
+	opacity: 1;
+}
+
+.card-body-prata .divider-2 {
+	border: 0;
+	height: 3px;
+	background: linear-gradient(to right, #808080,	#D3D3D3, 	#A9A9A9, #C0C0C0 );
+	margin: 10px 0;
+	/* Ajustar o espaçamento conforme necessário */
+	opacity: 1;
+	/* Garante que a opacidade esteja no máximo */
+}
+.beneficios-perfil-prata {
+	background-color: #000;
+	height: 80vh;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.beneficios-perfil-prata p {
+	color: #FFF;
+}
+
+.beneficios-perfil-prata h1 {
+	margin-top: -15vh;
+	color: #FFF;
+}
+
+.beneficios-perfil-prata img {
+	border-radius: 15px;
+	margin-top: 40px;
+	width: 100%;
+	height: 200%;
+}
+
+/* Perfil Ouro */
+
+.perfil-ouro-text {
+	background: var(--gradient-ouro);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.card-header-ouro {
+	background-color:#DAA520;
+	color: #ffffff;
+	text-align: center;
+	width: 100%;
+	height: 90%;
+}
+
+.card-body-ouro h6 {
+	color: #fff;
+
+}
+.card-body-ouro .divider {
+	border: 0;
+	height: 3px;
+	background:linear-gradient(to right, #DAA520,	#CD853F, #D4AF37, #CD853F );
+	margin: 10px 0;
+	opacity: 1;
+}
+
+.card-body-ouro .divider-2 {
+	border: 0;
+	height: 3px;
+	background:linear-gradient(to right, #DAA520,	#CD853F, #D4AF37, #CD853F );
+	margin: 10px 0;
+	opacity: 1;
+}
+.beneficios-perfil-ouro {
+	background-color: #000;
+	height: 80vh;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.beneficios-perfil-ouro p {
+	color: #FFF;
+}
+
+.beneficios-perfil-ouro h1 {
+	margin-top: -15vh;
+	color: #FFF;
+}
+
+.beneficios-perfil-ouro img {
+	border-radius: 15px;
+	margin-top: 40px;
+	width: 100%;
+	height: 120%;
+}
+
+/* Perfil Diamante */
+.perfil-diamante-text {
+	background: var(--gradient-diamante);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.card-header-diamante {
+	background-color:#008B8B;
+	color: #ffffff;
+	text-align: center;
+	width: 100%;
+	height: 90%;
+}
+
+.card-body-diamante h6 {
+	color: #fff;
+
+}
+.card-body-diamante .divider {
+	border: 0;
+	height: 3px;
+	background: linear-gradient(to right, #B9F2FF,	#008B8B, 	#66CDAA, #008B8B, #AFEEEE );
+	margin: 10px 0;
+	opacity: 1;
+}
+
+.card-body-diamante .divider-2 {
+	border: 0;
+	height: 3px;
+	background: linear-gradient(to right, #B9F2FF,	#008B8B, 	#66CDAA, #008B8B, #AFEEEE );
+	margin: 10px 0;
+	opacity: 1;
+}
+.beneficios-perfil-diamante {
+	background-color: #000;
+	height: 80vh;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.beneficios-perfil-diamante p {
+	color: #FFF;
+}
+
+.beneficios-perfil-diamante h1 {
+	margin-top: -15vh;
+	color: #FFF;
+}
+
+.beneficios-perfil-diamante img {
+	border-radius: 15px;
+	margin-top: 40px;
+	width: 70%;
+	height: 120%;
 }
 
 /* Media Queries */
