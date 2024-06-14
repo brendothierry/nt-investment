@@ -28,10 +28,10 @@ Table Of Contents:
 	--gradient: linear-gradient(to right, #03D6F3, #000AFF);
 	--gradient-bronze: linear-gradient(to right, #634641, #fff, #634641);
 	--gradient-bronze-branco: linear-gradient(to right, #fff, #634641, #fff, #634641);
-	--gradient-prata: linear-gradient(to right, #808080,	#D3D3D3, 	#A9A9A9, #C0C0C0 );
+	--gradient-prata: linear-gradient(to right, #808080, #D3D3D3, #A9A9A9, #C0C0C0);
 	--gradient-empresa: linear-gradient(to right, #ffffff, #2C4362, #ffffff, #ffffff, #ffffff);
-	--gradient-diamante:linear-gradient(to right, #B9F2FF,	#008B8B, 	#66CDAA, #008B8B, #AFEEEE );
-	--gradient-ouro:linear-gradient(to right, #DAA520,	#CD853F, #D4AF37 );
+	--gradient-diamante: linear-gradient(to right, #B9F2FF, #008B8B, #66CDAA, #008B8B, #AFEEEE);
+	--gradient-ouro: linear-gradient(to right, #DAA520, #CD853F, #D4AF37);
 	--quarter: #000AFF;
 }
 
@@ -744,6 +744,15 @@ li {
 	margin-top: 5px;
 }
 
+.plan-benefits .value-destaq-ouro {
+	font-size: 17px;
+	font-weight: bold;
+	background: linear-gradient(to right, #ffffff, #00ff22);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
 /************************/
 /*     Testimonials     */
 /************************/
@@ -899,6 +908,9 @@ li {
 	}
 }
 
+.mobile-show{
+	display: none;
+}
 
 /**********************/
 /*     Newsletter     */
@@ -1040,9 +1052,10 @@ li {
 	height: 80vh;
 
 }
+
 .algo-trading img {
 
-border-radius: 10px;
+	border-radius: 10px;
 
 }
 
@@ -1077,10 +1090,11 @@ border-radius: 10px;
 	color: #ffffff;
 
 }
+
 .estatistica img {
 
 	border-radius: 8px;
-	
+
 }
 
 .sobre-nt {
@@ -1351,8 +1365,9 @@ border-radius: 10px;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
+
 .card-header-prata {
-	background-color:#808080;
+	background-color: #808080;
 	color: #ffffff;
 	text-align: center;
 	width: 100%;
@@ -1363,10 +1378,11 @@ border-radius: 10px;
 	color: #fff;
 
 }
+
 .card-body-prata .divider {
 	border: 0;
 	height: 3px;
-	background: linear-gradient(to right, #808080,	#D3D3D3, 	#A9A9A9, #C0C0C0 );
+	background: linear-gradient(to right, #808080, #D3D3D3, #A9A9A9, #C0C0C0);
 	margin: 10px 0;
 	opacity: 1;
 }
@@ -1374,12 +1390,13 @@ border-radius: 10px;
 .card-body-prata .divider-2 {
 	border: 0;
 	height: 3px;
-	background: linear-gradient(to right, #808080,	#D3D3D3, 	#A9A9A9, #C0C0C0 );
+	background: linear-gradient(to right, #808080, #D3D3D3, #A9A9A9, #C0C0C0);
 	margin: 10px 0;
 	/* Ajustar o espaçamento conforme necessário */
 	opacity: 1;
 	/* Garante que a opacidade esteja no máximo */
 }
+
 .beneficios-perfil-prata {
 	background-color: #000;
 	height: 80vh;
@@ -1412,8 +1429,9 @@ border-radius: 10px;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
+
 .card-header-ouro {
-	background-color:#DAA520;
+	background-color: #DAA520;
 	color: #ffffff;
 	text-align: center;
 	width: 100%;
@@ -1424,10 +1442,11 @@ border-radius: 10px;
 	color: #fff;
 
 }
+
 .card-body-ouro .divider {
 	border: 0;
 	height: 3px;
-	background:linear-gradient(to right, #DAA520,	#CD853F, #D4AF37, #CD853F );
+	background: linear-gradient(to right, #DAA520, #CD853F, #D4AF37, #CD853F);
 	margin: 10px 0;
 	opacity: 1;
 }
@@ -1435,10 +1454,11 @@ border-radius: 10px;
 .card-body-ouro .divider-2 {
 	border: 0;
 	height: 3px;
-	background:linear-gradient(to right, #DAA520,	#CD853F, #D4AF37, #CD853F );
+	background: linear-gradient(to right, #DAA520, #CD853F, #D4AF37, #CD853F);
 	margin: 10px 0;
 	opacity: 1;
 }
+
 .beneficios-perfil-ouro {
 	background-color: #000;
 	height: 80vh;
@@ -1470,8 +1490,9 @@ border-radius: 10px;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
+
 .card-header-diamante {
-	background-color:#008B8B;
+	background-color: #008B8B;
 	color: #ffffff;
 	text-align: center;
 	width: 100%;
@@ -1482,10 +1503,11 @@ border-radius: 10px;
 	color: #fff;
 
 }
+
 .card-body-diamante .divider {
 	border: 0;
 	height: 3px;
-	background: linear-gradient(to right, #B9F2FF,	#008B8B, 	#66CDAA, #008B8B, #AFEEEE );
+	background: linear-gradient(to right, #B9F2FF, #008B8B, #66CDAA, #008B8B, #AFEEEE);
 	margin: 10px 0;
 	opacity: 1;
 }
@@ -1493,10 +1515,11 @@ border-radius: 10px;
 .card-body-diamante .divider-2 {
 	border: 0;
 	height: 3px;
-	background: linear-gradient(to right, #B9F2FF,	#008B8B, 	#66CDAA, #008B8B, #AFEEEE );
+	background: linear-gradient(to right, #B9F2FF, #008B8B, #66CDAA, #008B8B, #AFEEEE);
 	margin: 10px 0;
 	opacity: 1;
 }
+
 .beneficios-perfil-diamante {
 	background-color: #000;
 	height: 80vh;
@@ -1613,11 +1636,47 @@ border-radius: 10px;
 }
 
 @media (max-width: 768px) {
+	.barra-preta {
+		background-color: #000;
+		width: 100vw;
+		height: 40px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+		top: 80px;
+		left: 0;
+		z-index: 1;
+	}
+
+	.btn-preto {
+		font-family: sora, Sans-serif;
+		font-size: 16px;
+		font-weight: 550;
+		fill: #fff;
+		color: #FFF;
+		background-color: transparent;
+		background-image: linear-gradient(to right, #0d0ac0, #0d0ac0);
+		border-radius: 12px;
+		transition: transform 0.3s ease;
+		border: none;
+		cursor: pointer;
+		width: 160px;
+		top: 30px;
+		margin-top: -20px;
+		display: inline-block;
+		text-align: center;
+	}
+
+	.mobile-show {
+		display: flex;
+	}
+	
 	.home {
 		background-image: url(../assets/images/home-mobile.png);
 		background-size: cover;
 		background-repeat: no-repeat;
-		padding-top: 500px !important;
+		padding-top: 450px !important;
 	}
 
 	.mobile-hide {
@@ -1941,5 +2000,284 @@ border-radius: 10px;
 
 	.about .col-lg-7 {
 		padding: 0;
+	}
+
+	.home-perfil-bronze {
+		height: auto;
+		padding: 10px 0;
+	}
+
+	.home-perfil-bronze p {
+		font-size: 14px;
+	}
+
+	.beneficios-perfil-bronze {
+		height: auto;
+		padding: 10px 0;
+	}
+
+	.beneficios-perfil-bronze h1 {
+		margin-top: -20vh;
+		font-size: 40px;
+	}
+
+	.beneficios-perfil-bronze p {
+		font-size: 18px;
+	}
+
+	.beneficios-perfil-bronze img {
+		width: 100%;
+		height: auto;
+	}
+
+	.passo-perfil-bronze {
+		height: auto;
+		flex-direction: column;
+		text-align: center;
+		padding: 10px;
+	}
+
+	.passo-perfil-bronze h4 {
+		font-size: 18px;
+	}
+
+	.passo-perfil-bronze img {
+		width: 100%;
+	}
+
+	.card-header-bronze {
+		height: auto;
+		padding: 10px 0;
+	}
+
+	.card-body-bronze h6 {
+		font-size: 16px;
+	}
+
+	.card-body-bronze .divider,
+	.card-body-bronze .divider-2 {
+		height: 2px;
+	}
+
+	.card-footer-bronze {
+		font-size: 14px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	}
+
+	.card-footer-bronze .btn {
+		width: 100%;
+	}
+
+	/* PRATA */
+	.home-perfil-prata {
+		height: auto;
+		padding: 10px 0;
+	}
+
+	.home-perfil-prata p {
+		font-size: 14px;
+	}
+
+	.beneficios-perfil-prata {
+		height: auto;
+		padding: 10px 0;
+	}
+
+	.beneficios-perfil-prata h1 {
+		margin-top: -20vh;
+		font-size: 40px;
+	}
+
+	.beneficios-perfil-prata p {
+		font-size: 18px;
+	}
+
+	.beneficios-perfil-prata img {
+		width: 100%;
+		height: auto;
+	}
+
+	.passo-perfil-prata {
+		height: auto;
+		flex-direction: column;
+		text-align: center;
+		padding: 10px;
+	}
+
+	.passo-perfil-prata h4 {
+		font-size: 18px;
+	}
+
+	.passo-perfil-prata img {
+		width: 100%;
+	}
+
+	.card-header-prata {
+		height: auto;
+		padding: 10px 0;
+	}
+
+	.card-body-prata h6 {
+		font-size: 16px;
+	}
+
+	.card-body-prata .divider,
+	.card-body-prata .divider-2 {
+		height: 2px;
+	}
+
+	.card-footer-prata {
+		font-size: 14px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	}
+
+	.card-footer-prata .btn {
+		width: 100%;
+	}
+
+	/* OURO */
+	.home-perfil-ouro {
+		height: auto;
+		padding: 10px 0;
+	}
+
+	.home-perfil-ouro p {
+		font-size: 14px;
+	}
+
+	.beneficios-perfil-ouro {
+		height: auto;
+		padding: 10px 0;
+	}
+
+	.beneficios-perfil-ouro h1 {
+		margin-top: -20vh;
+		font-size: 40px;
+	}
+
+	.beneficios-perfil-ouro p {
+		font-size: 18px;
+	}
+
+	.beneficios-perfil-ouro img {
+		width: 100%;
+		height: auto;
+	}
+
+	.passo-perfil-ouro {
+		height: auto;
+		flex-direction: column;
+		text-align: center;
+		padding: 10px;
+	}
+
+	.passo-perfil-ouro h4 {
+		font-size: 18px;
+	}
+
+	.passo-perfil-ouro img {
+		width: 100%;
+	}
+
+	.card-header-ouro {
+		height: auto;
+		padding: 10px 0;
+	}
+
+	.card-body-ouro h6 {
+		font-size: 16px;
+	}
+
+	.card-body-ouro .divider,
+	.card-body-ouro .divider-2 {
+		height: 2px;
+	}
+
+	.card-footer-ouro {
+		font-size: 14px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	}
+
+	.card-footer-ouro .btn {
+		width: 100%;
+	}
+
+	/* DIAMANTE */
+	.home-perfil-diamante {
+		height: auto;
+		padding: 10px 0;
+	}
+
+	.home-perfil-diamante p {
+		font-size: 14px;
+	}
+
+	.beneficios-perfil-diamante {
+		height: auto;
+		padding: 10px 0;
+	}
+
+	.beneficios-perfil-diamante h1 {
+		margin-top: -20vh;
+		font-size: 40px;
+	}
+
+	.beneficios-perfil-diamante p {
+		font-size: 18px;
+	}
+
+	.beneficios-perfil-diamante img {
+		width: 100%;
+		height: auto;
+	}
+
+	.passo-perfil-diamante {
+		height: auto;
+		flex-direction: column;
+		text-align: center;
+		padding: 10px;
+	}
+
+	.passo-perfil-diamante h4 {
+		font-size: 18px;
+	}
+
+	.passo-perfil-diamante img {
+		width: 100%;
+	}
+
+	.card-header-diamante {
+		height: auto;
+		padding: 10px 0;
+	}
+
+	.card-body-diamante h6 {
+		font-size: 16px;
+	}
+
+	.card-body-diamante .divider,
+	.card-body-diamante .divider-2 {
+		height: 2px;
+	}
+
+	.card-footer-diamante {
+		font-size: 14px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	}
+
+	.card-footer-diamante .btn {
+		width: 100%;
 	}
 }
