@@ -744,8 +744,8 @@ li {
 	margin-top: 5px;
 }
 
-.plan-benefits .value-destaq-ouro {
-	font-size: 17px;
+.plan-benefits .value-destaq {
+	font-size: 15px;
 	font-weight: bold;
 	background: linear-gradient(to right, #ffffff, #00ff22);
 	background-clip: text;
@@ -1005,6 +1005,7 @@ li {
 }
 
 .home-about h1 {
+	margin-top: 5%;
 	color: #f1f7f3;
 
 }
@@ -1042,21 +1043,17 @@ li {
 }
 
 .home-about img {
-	border-radius: 15px;
+	border-radius: 9px;
 
 }
 
 .algo-trading {
-
 	background-color: #000;
 	height: 80vh;
-
 }
 
 .algo-trading img {
-
 	border-radius: 10px;
-
 }
 
 .algo-trading h1 {
@@ -1070,7 +1067,6 @@ li {
 
 .algo-trading .text-bold {
 	font-weight: bold;
-
 }
 
 .estatistica {
@@ -1937,6 +1933,28 @@ li {
 		width: 100%;
 	}
 
+	.algo-trading h1 {
+		color: #ffffff;
+		margin-top: -50%;
+	}
+
+	.estatistica h1 {
+		color: #ffffff;
+		margin-top: -40%;
+	}
+
+	.sobre-nt img{
+		min-width: 100%;
+	}
+
+	.sobre-nt .p{
+		min-width: 100%;
+	}
+
+	.location .container-nt {
+		width: 100%;
+		margin-top: 40%;
+	}
 }
 
 @media (max-width: 1728px) {
@@ -2280,4 +2298,5 @@ li {
 	.card-footer-diamante .btn {
 		width: 100%;
 	}
+
 }
